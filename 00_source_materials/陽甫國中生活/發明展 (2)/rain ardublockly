@@ -1,0 +1,324 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="arduino_functions" id="CJ4eZ!%/1G2(XSbLBOh7" deletable="false" x="0" y="218">
+    <statement name="SETUP_FUNC">
+      <block type="bluetooth" id="-f4//^H{Sa7wFCps4PVU">
+        <field name="RX_PIN">A4</field>
+        <field name="TX_PIN">A5</field>
+        <field name="BAUDRATE">9600</field>
+        <next>
+          <block type="serial_setup" id="_Pad@l%1L;*_!UON/#3r">
+            <field name="SERIAL_ID">Serial</field>
+            <field name="SPEED">9600</field>
+            <next>
+              <block type="servo_attach" id="u%az?)Whnt6jspVsGMQs">
+                <field name="SERVO_NAME">servo_9</field>
+                <field name="SERVO_PIN">12</field>
+                <next>
+                  <block type="servo_write" id=":t~U~;2avv`O^38|gWsy">
+                    <field name="SERVO_NAME">servo_9</field>
+                    <value name="SERVO_ANGLE">
+                      <block type="math_number" id="Apn2H+N_LdvL]-]`a6Mf">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="LOOP_FUNC">
+      <block type="serial_print" id="3vcL_-vrC9%#,}MGRJ4Z">
+        <field name="SERIAL_ID">Serial</field>
+        <field name="NEW_LINE">TRUE</field>
+        <value name="CONTENT">
+          <block type="text_join" id="}Ly5;U2{yXmcj_S@%w7t">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="variables_get" id="udYDd{5zFnG/)9xq++k)">
+                <field name="VAR">計時a</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="char" id="/|T37w,KcIoXUVnTp.kk">
+                <field name="CHAR">，</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="variables_get" id="c{EFgYamt@+yQXPH`kUD">
+                <field name="VAR">計時b</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="char" id="CL.WU0gMzgl*ry.tY*st">
+                <field name="CHAR">，</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="serial_print" id="Sn!0oeZF_966HfTqHI(G">
+            <field name="SERIAL_ID">Serial</field>
+            <field name="NEW_LINE">TRUE</field>
+            <value name="CONTENT">
+              <block type="variables_get" id="A(+}JoUd=:HxBq@?{!?9">
+                <field name="VAR">距離</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="^3OH0ztl,A.CjlhKg)(]">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="variables_get" id="Z_@IWa-MvRmhEx6S=c).">
+                    <field name="VAR">攝氏溫度</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="+BHUk-e_.rH@{(rpQ3MY">
+                    <field name="VAR">攝氏溫度</field>
+                    <value name="VALUE">
+                      <block type="DHT11_readTemp" id="~pL0wl}(-0ltX!4c?,Sk">
+                        <field name="DATAPIN">A2</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_if" id="cN^tsHQ4rt6Oxf7%i)Yb">
+                        <value name="IF0">
+                          <block type="bluetooth_available" id="n1+x1Z+w~qq|Yay7/P[a"></block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="variables_set" id="~Un|`oId9JjWt?]HnPl,">
+                            <field name="VAR">c</field>
+                            <value name="VALUE">
+                              <block type="bluetooth_read" id="-R!]WJ!bG}T!kARU(;J("></block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="2myjo7PsilYbA~RYfAJ!">
+                            <mutation elseif="1"></mutation>
+                            <value name="IF0">
+                              <block type="logic_compare" id="!KMQ::S)YutX~n1@GX;c">
+                                <field name="OP">LT</field>
+                                <value name="A">
+                                  <block type="io_analogread" id="1[l4@AYAf%n00Ni#)@aK">
+                                    <field name="PIN">A0</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id=")lWv+/63/yJ*~3CM)th0">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="servo_write" id="OAi=AmBYY2e{+o_E9GUw">
+                                <field name="SERVO_NAME">servo_9</field>
+                                <value name="SERVO_ANGLE">
+                                  <block type="math_number" id="{B]5_S3p;o|WG)t,otWB">
+                                    <field name="NUM">170</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF1">
+                              <block type="logic_compare" id="]Gb*tLf0Na`}B{}%W%Sn">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                  <block type="io_analogread" id=":ljYOG#6._F;;b5e0T;k">
+                                    <field name="PIN">A0</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="^Jm_5g[.-A[5_aHKj:g[">
+                                    <field name="NUM">1000</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block type="servo_write" id="oG,Jg-UnMfZhBXPNq3+-">
+                                <field name="SERVO_NAME">servo_9</field>
+                                <value name="SERVO_ANGLE">
+                                  <block type="math_number" id="CtE+b62/{,xA+Eg!`q~e">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="T6}O8mUUuJNj4fWVy]j]">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="*Im7^3Ak32j6y9]wJHuO">
+                                    <field name="OP">GT</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="5jpD#-q,|S7O:vpBf`h(">
+                                        <field name="VAR">攝氏溫度</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="obSn];D)g]#UYeiu~ROn">
+                                        <field name="NUM">30</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="controls_if" id="^ai5F9:7!LH*D5j#AYkm" x="301" y="955">
+    <mutation elseif="7"></mutation>
+    <value name="IF0">
+      <block type="logic_compare" id="!nV(FVOZxG|S~_2H@5Hw">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="]4J~v.{`7c7D~;E5*Ywz">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id=")a|v]bFVv;XixRcZZ|Dd">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="IF1">
+      <block type="logic_compare" id="KNmT3}hJa.Xs*`L}}M.P">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="ih|REk5_s2aksMxZvYMG">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id="Ilq!V3lk+1=!vbO,y(Xu">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="IF2">
+      <block type="logic_compare" id="V0^d:TC3.ys0qCuiA[oV">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="E}rD%jzf^2JVVGa!0K,U">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id="=YKYu^HR8aBx|m`Pfr!3">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="IF3">
+      <block type="logic_compare" id="F@}^n#)1YD#z_OKeDvhi">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="k8Sjd+_/{^/m|{TuZ-tG">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id="Nn,hxDKEN=0V?@dKQFcj">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="IF4">
+      <block type="logic_compare" id="exQo.%BEih|PeylcL[z`">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="[o:Q9#KYSiL7XJyEG*W^">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id="X(QPN,Pf,tZ+o_7R2x,0">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="IF5">
+      <block type="logic_compare" id="k]!B!WE|Cz6X3QL%Y)/H">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="TZq~q[x_G*N#Nj?JaZ6@">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id="0Jqzi8rp`%]q|QRlQwzE">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="IF6">
+      <block type="logic_compare" id="#-n1/BOzv@S2C!k,q-{4">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="Raa[pP.6DG+X-Uc_*_+,">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id="|U!L}EO@3YLhhBT9-Dg(">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="IF7">
+      <block type="logic_compare" id="`U^`Zfi{o7*FO.Af+qt%">
+        <field name="OP">EQ</field>
+        <value name="A">
+          <block type="variables_get" id="KzhQ_^Y[Mivv~s_.X3.6">
+            <field name="VAR">c</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="char" id="l6mc7o`LB5)ucn^BCSb/">
+            <field name="CHAR"></field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="io_analogwrite" id="OammsI7Yy:gP2qm(isGP" x="0" y="1330">
+    <field name="PIN">3</field>
+    <value name="NUM">
+      <block type="math_number" id="4]@1Y1t#adT39y`-u5n8">
+        <field name="NUM">100</field>
+      </block>
+    </value>
+  </block>
+  <block type="io_digitalwrite" id=";URv{lCpg|@8/-(ns3BZ" x="0" y="1385">
+    <field name="PIN">0</field>
+    <value name="STATE">
+      <block type="io_highlow" id="@i9(I5jqk0Lp;b;H5Q4V">
+        <field name="STATE">HIGH</field>
+      </block>
+    </value>
+  </block>
+</xml>
