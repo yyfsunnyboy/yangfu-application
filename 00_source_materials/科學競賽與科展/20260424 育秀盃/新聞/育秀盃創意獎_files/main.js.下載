@@ -1,0 +1,218 @@
+'use strict';
+
+/*  global jQuery, $  */
+jQuery(document).ready(function () {
+  $('nav#menu').mmenu({
+    drag: true,
+    pageScroll: {
+      scroll: true,
+      update: true
+    },
+    'extensions': ['theme-light', 'fx-menu-fade', 'fx-listitems-slide']
+  }, {
+    classNames: {
+      fixedElements: {
+        fixed: 'fix',
+        sticky: 'sticky-top'
+      }
+    }
+  });
+  $('#pageHeader').sticky({ topSpacing: 0 });
+  $('#pageHeader').on('sticky-end', function () {
+    $(this).parent('.sticky-wrapper').css({ height: 'auto' });
+  }); // sticky 補丁
+
+  $().UItoTop({
+    easingType: 'easeOutQuart',
+    text: ''
+  });
+  //-$('.dropdown-hover').dropdownHover(100)
+
+  $('.news-slider-wrapper').slick({
+    prevArrow: '<button type="button" class="slick-prev"><i class="icon-left-open"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="icon-right-open"></i></button>',
+    dots: true,
+    slidesToShow: 3,
+    infinite: true,
+    speed: 500,
+    autoplay: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }]
+  });
+
+  // $('.organizer-slick').slick({
+  //   dots: false,
+  //   prevArrow: '<button type="button" class="slick-prev"><i class="icon-left-open"></i></button>',
+  //   nextArrow: '<button type="button" class="slick-next"><i class="icon-right-open"></i></button>',
+  //   infinite: false,
+  //   speed: 800,
+  //   slidesToScroll: 5,
+  //   centerMode: true,
+  //   variableWidth: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '30px',
+  //         slidesToShow: 3,
+  //         slidesToScroll: 2
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '20px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
+
+  $('.lazy').Lazy();
+
+  // 上傳圖片 =============================
+  // 查找同層 element
+  var siblingElem = function siblingElem(elem) {
+    var _nodes = [],
+        _elem = elem;
+    while (elem = elem.previousSibling) {
+      if (elem.nodeType === 1) {
+        _nodes.push(elem);
+        break;
+      }
+    }
+    elem = _elem;
+    while (elem = elem.nextSibling) {
+      if (elem.nodeType === 1) {
+        _nodes.push(elem);
+        break;
+      }
+    }
+    return _nodes;
+  };
+
+  var uploadInputs = document.querySelectorAll('.fileElem'),
+      uploadBtns = document.querySelectorAll('.fileSelect');
+  // 點擊上傳按鈕
+  if (uploadBtns) {
+    var _loop = function _loop(i) {
+      uploadBtns[i].addEventListener("click", function (e) {
+        var t = siblingElem(this);
+        if (t) {
+          console.log(t[0]);
+          t[0].click();
+          t[0].addEventListener("change", function (e) {
+            handleFiles(uploadBtns[i], this.files);
+            console.log(this.files);
+          });
+        }
+        e.preventDefault(); // prevent navigation to "#"
+      }, false);
+    };
+
+    for (var i = 0; i < uploadBtns.length; i++) {
+      _loop(i);
+    }
+  }
+  function handleFiles(filearea, files) {
+    console.log(files);
+
+    if (!files.length) {
+      filearea.innerHTML = "<p>No files selected!</p>";
+    } else {
+      filearea.innerHTML = "";
+      var list = document.createElement("ul");
+      filearea.appendChild(list);
+      filearea.classList.add("has_file");
+
+      for (var i = 0; i < files.length; i++) {
+        var li = document.createElement("li");
+        list.appendChild(li);
+
+        var img = document.createElement("img");
+        img.src = window.URL.createObjectURL(files[i]);
+
+        img.onload = function () {
+          window.URL.revokeObjectURL(this.src);
+        };
+        li.appendChild(img);
+      }
+    }
+  }
+  // 註冊 Modal
+  var StepSignUp = document.getElementById('StepSignUp');
+  var resetPassword = document.getElementById('resetPassword');
+  var StepSignIn = document.getElementById('StepSignIn');
+
+  StepSignUp.style.display = "none";
+  resetPassword.style.display = "none";
+
+  var signUpbtn = document.getElementById('gotoSignUp');
+  signUpbtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    StepSignIn.style.display = "none";
+    StepSignUp.style.display = "block";
+  });
+  var forgetBtn = document.getElementById('forgetBtn');
+  forgetBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    StepSignIn.style.display = "none";
+    resetPassword.style.display = "block";
+  });
+
+  // init Masonry
+  var $grid = $('.waterfall-container').masonry({
+    itemSelector: '.card-works',
+    columnWidth: '.card-sizer',
+    percentPosition: true,
+    horizontalOrder: true
+  });
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry();
+  });
+  // refire Masonry after tab
+  $('.masonry-tab').on('click', function () {
+    $grid.imagesLoaded().progress(function () {
+      $grid.masonry();
+    });
+  });
+
+  function expandMenu(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    var siblingElem = $(this).parent().siblings().children('.active');
+    var sibUl = siblingElem.next("ul");
+    siblingElem.removeClass('active');
+    sibUl.slideUp('normal');
+    console.log(sibUl);
+
+    var sublist = $(e.target).next("ul");
+    if (sublist.length != 0) {
+      if (sublist.is(":visible")) {
+        sublist.slideUp('normal');
+      } else {
+        sublist.slideDown('normal');
+      }
+    }
+    return false;
+  }
+  $('.multiLevelMenu ul:first').show();
+  $('.multiLevelMenu li a.down-icon').click(expandMenu);
+});
+//# sourceMappingURL=main.js.map
