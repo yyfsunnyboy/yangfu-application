@@ -66,7 +66,7 @@
 
 ## 4. 六大核心維護檔案指引
 
-本 repo 持續在 `01_master_profile/` 與 `03_baichuan/` 維護以下六大主題資料庫：
+本 repo 持續在 `01_master_profile/` 與 `03_nycu/01_baichuan/` 維護以下六大主題資料庫：
 - **A. 事實時間軸 (`01_facts_timeline.md`)**：國一至高三完整事實紀錄。
 - **B. 證據索引 (`02_evidence_index.md`)**：原始佐證、證明力、個資風險與公開適合度。
 - **C. 經歷與能力對照表 (`03_capability_matrix.md`)**：十三項能力嚴格依佐證勾選。

@@ -18,14 +18,20 @@
 
 ---
 
-### 2. 百川專用資料目錄 (`03_baichuan/`)
-- [00_requirements.md](file:///c:/Projects/yangfu-application/03_baichuan/00_requirements.md)：百川學士學位學程簡章提要、報考資格、頁數限制與甄試權重。
-- [01_evidence_inventory.md](file:///c:/Projects/yangfu-application/03_baichuan/01_evidence_inventory.md)：百川申請證據盤點表，涵蓋各頁面屬性、標籤、佐證、分工與適用校系。
-- [02_submission_checklist.md](file:///c:/Projects/yangfu-application/03_baichuan/02_submission_checklist.md)：報名與審查資料準備進度檢核表。
-- [03_application_form_data.md](file:///c:/Projects/yangfu-application/03_baichuan/03_application_form_data.md)：報名表單數據彙整（學籍、各學期成績、國高中競賽、語言檢定）。
-- [04_story_master.md](file:///c:/Projects/yangfu-application/03_baichuan/04_story_master.md)：自傳與學習計畫故事母稿（完整的個人敘事骨架、角色分工、Healer 邊界探究與課堂回歸閉環）。
-- [04_autobiography_1000.md](file:///c:/Projects/yangfu-application/03_baichuan/04_autobiography_1000.md)：交大百川自傳 998 字定稿版（文字母版已定稿）。
-- [04_autobiography_draft.md](file:///c:/Projects/yangfu-application/03_baichuan/04_autobiography_draft.md)：手寫自傳規劃與謄寫參考底稿。
+### 2. 陽明交通大學特殊選才目錄 (`03_nycu/`)
+- [00_shared](file:///d:/Python/yangfu-application/03_nycu/00_shared/README.md)：NYCU 特殊選才共用之招生規定、證據盤點、推薦信策略與來源對照。
+- [01_baichuan](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/README.md)：**百川學士學位學程**（核心：跨領域、文武不岐、自主學習、教育科技實踐與 8 項未解研究課題）。
+  - 核心文件：[自傳文字母版 (998字)](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/04_autobiography_1000.md)、[故事母稿](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/04_story_master.md)、[簡章提要](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/00_requirements.md)、[證據盤點表](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/01_evidence_inventory.md)、[進度檢核表](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/02_submission_checklist.md)、[報名數據表](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/03_application_form_data.md)。
+- [02_cs](file:///d:/Python/yangfu-application/03_nycu/02_cs/README.md)：**資訊工程學系**（核心：程式可靠度、AST Healer、系統架構、演算法理論與軟體工程）。
+- [03_ee](file:///d:/Python/yangfu-application/03_nycu/03_ee/README.md)：**電機工程學系**（核心：工程實踐、Arduino 感測控制、容錯除錯、底層計算硬體與微處理機）。
+
+---
+
+### 3. 清華大學特殊選才目錄 (`04_nthu/`)
+- [00_shared](file:///d:/Python/yangfu-application/04_nthu/00_shared/README.md)：清大三個申請方向共用之簡章規定、證據盤點、推薦信策略與來源對照。
+- [01_cs](file:///d:/Python/yangfu-application/04_nthu/01_cs/README.md)：**資訊工程學系**（核心：程式可靠性、AST Healer、軟體工程、系統架構與 CS 理論追求）。
+- [02_ee](file:///d:/Python/yangfu-application/04_nthu/02_ee/README.md)：**電機工程學系**（核心：工程實作、感測控制、容錯除錯思維、計算硬體與系統工程）。
+- [03_ipth](file:///d:/Python/yangfu-application/04_nthu/03_ipth/README.md)：**清華學院學士班（IPTH）**（核心：資訊研發、運動競技、外語素養三線並行，持續深化教育科技專案實踐）。
 
 ---
 
@@ -35,7 +41,7 @@
 > **陽甫的優勢不是單純會使用 AI，而是已開始把 AI 當成可設計、實作、測試、驗證與修正的工程系統。**
 
 ### 第一層｜招生必讀核心文件
-- **自傳文字母版**：✅ **998 字定稿版完成**（[04_autobiography_1000.md](file:///c:/Projects/yangfu-application/03_baichuan/04_autobiography_1000.md)）
+- **自傳文字母版**：✅ **998 字定稿版完成**（[04_autobiography_1000.md](file:///d:/Python/yangfu-application/03_nycu/01_baichuan/04_autobiography_1000.md)）
 - **正式手寫提交版**：⏳ **待謄寫／最後檢查**（黑/藍筆手寫於 A4 紙張後掃描 PDF）
 - **學習計畫**：⏳ **待撰寫（高優先 Pending）**（A4 三頁內修課藍圖，圍繞未解跨域研究課題）
 - **高中成績單、操行與獎懲證明、個人資料表**：✅ 已具備原始檔案

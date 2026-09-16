@@ -2,7 +2,7 @@
 
 > ⚠️ **ARCHIVED PLANNING DRAFT / 非目前提交版本**  
 > **重要說明**：本文件為早期手寫自傳架構規劃與訪談提煉底稿，已封存作為歷史規劃資料。  
-> **目前正式提交文字母版為**：[04_autobiography_1000.md](file:///c:/Projects/yangfu-application/03_baichuan/04_autobiography_1000.md)（**998 字定稿版**）。後續正式手寫謄寫請一律以 `04_autobiography_1000.md` 為唯一權威文本。
+> **目前正式提交文字母版為**：[04_autobiography_1000.md](file:///c:/Projects/yangfu-application/03_nycu/01_baichuan/04_autobiography_1000.md)（**998 字定稿版**）。後續正式手寫謄寫請一律以 `04_autobiography_1000.md` 為唯一權威文本。
 
 ---
 
@@ -33,7 +33,7 @@
 
 ## 3. 手寫謄寫前核對清單
 
-- [x] 正式文本：以 `03_baichuan/04_autobiography_1000.md` 為唯一母本。
+- [x] 正式文本：以 `03_nycu/01_baichuan/04_autobiography_1000.md` 為唯一母本。
 - [ ] 字數控制：998 字（符合簡章 1000 字內規定）。
 - [ ] 範疇確認：聚焦國一至高三近 5 年歷程，無國小/幼兒園篇幅。
 - [ ] 格式確認：黑/藍原子筆手寫於 A4 紙張，300dpi 彩色掃描為單一 PDF 檔。
