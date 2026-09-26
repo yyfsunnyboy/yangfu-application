@@ -138,7 +138,7 @@ COMMON_STYLE = """
 </style>
 """
 
-# HTML Content for Yuxiu Cup (Exact 1 page)
+# HTML Content for Yuxiu Cup (Exact 1 page, class removed, 3-column table)
 content_yuxiu = f"""<!DOCTYPE html>
 <html>
 <head>
@@ -155,7 +155,7 @@ content_yuxiu = f"""<!DOCTYPE html>
 </div>
 
 <div class="cert-text">
-  茲證明本校學生 <strong>葉陽甫</strong>（身分證字號：___________________，國立花蓮高級中學三年五班），於在學期間指導參與 <strong>財團法人育秀教育基金會</strong> 主辦之 <strong>「2026 第 23 屆育秀盃創意獎」</strong>，榮獲 <strong>高中職 AI 應用類 金獎（全國首獎，獎金新臺幣拾萬元整）</strong>。本獲獎專案依據正式提報之參賽企劃書（SA237853）與決賽簡報，其全端研發架構、團隊工作職責與申請人個人實質貢獻比例說明如下：
+  茲證明本校學生 <strong>葉陽甫</strong>（身分證字號：___________________，國立花蓮高級中學），於在學期間指導參與 <strong>財團法人育秀教育基金會</strong> 主辦之 <strong>「2026 第 23 屆育秀盃創意獎」</strong>，榮獲 <strong>高中職 AI 應用類 金獎（全國首獎，大會獎金新臺幣拾萬元整）</strong>。本獲獎專案依據正式提報之參賽企劃書（SA237853）與決賽技術簡報，其全端研發架構、團隊工作職責與申請人個人實質貢獻比例說明如下：
 </div>
 
 <div class="section-title">一、獲獎專案基本資訊</div>
@@ -185,39 +185,40 @@ content_yuxiu = f"""<!DOCTYPE html>
 <div class="section-title">二、三人研發團隊架構與成員具體職責分工</div>
 <table class="info-table">
   <tr>
-    <th style="width: 18%;">研發成員／班級</th>
+    <th style="width: 18%;">研發成員</th>
     <th style="width: 68%;">系統架構模組與具體研發權責（前後台建置、部署與核心功能）</th>
     <th style="width: 14%;">實質貢獻度</th>
   </tr>
   <tr class="highlight-member">
-    <td class="center" style="vertical-align: middle;"><strong>葉陽甫</strong><br>(申請人／主責)<br>三年五班</td>
+    <td class="center" style="vertical-align: middle;"><strong>葉陽甫</strong><br>(第一作者／核心主責／<br>決賽技術答辯人)</td>
     <td>
-      <strong>【前後台全系統架構設計、後台資料庫規劃建置、教材流水線、Code-as-Content 出題、前台蘇格拉底作答與線上部署上線】</strong>
+      <strong>【專案核心架構設計、全端系統獨立實作、企劃書主筆與決賽技術簡報答辯】</strong>
       <ul class="duty-list">
-        <li><strong>後台資料庫規劃、建置與系統上線維運</strong>：獨立規劃底層階層式知識圖譜資料庫骨架（年級&rarr;冊次&rarr;章節&rarr;知識節點先後關係），建置題庫、學生歷程與診斷數據庫；負責伺服器環境配置、系統部署與實際上線，實地導入花蓮高商數學課堂進行教學試用。</li>
-        <li><strong>後台流水線教材輸入（Automated Import Pipeline）</strong>：建置教材自動化解析流程，支援教師上傳 PDF/Word 講義後自動萃取內容並對齊課綱節點，保留 Human-in-the-loop 機制供教師審核與修訂。</li>
-        <li><strong>中台 Code-as-Content（程式即內容）出題引擎</strong>：主導「算邏分離」出題架構，以 Python 直譯腳本即時動態生成無限變體題並精算標準答案，根除大模型數值計算幻覺；並在出題代碼排查中奠定後續 AST 容錯研究起點。</li>
-        <li><strong>前台多模態作答系統 &times; 蘇格拉底 AI 助教</strong>：建置學生作答介面，整合 Canvas 手寫板與考卷拍照（Vision AI）辨識解題中間步驟；設計「蘇格拉底式 AI 助教」，不直接給答案，而是透過階梯式提問引導學生自我推理；內建 Explainable AI 決策可視化介面與教學／評量雙模式。</li>
-        <li><strong>全端模組閉環整合（Pipeline Integration）</strong>：統籌前後端狀態機同步與 API 介面契約，將隊友研發之 PPO 推薦決策模型與搜尋檢索時調用之 Hybrid RAG 模組完整整合進系統主線流程，落實「教材進得來、題目生得出、學生寫得下、系統看得懂」之端到端學習閉環。</li>
+        <li><strong>專案發起與全系統架構設計</strong>：自主發起專案，針對高職數學課堂痛點完成總體架構規劃，統籌前後端狀態機契約與全流程閉環。</li>
+        <li><strong>後台資料庫規劃、建置與系統維運</strong>：獨立設計階層式知識圖譜資料庫（年級&rarr;冊次&rarr;章節&rarr;知識節點關係），建置題庫與學生學習歷程庫；負責伺服器環境配置、系統部署與上線，實地導入花蓮高商數學課堂試用。</li>
+        <li><strong>後台自動化教材輸入流水線（Import Pipeline）</strong>：實作教材自動化解析流程，支援教師上傳講義後自動萃取內容並對齊課綱節點，保留 Human-in-the-loop 人機協同修訂機制。</li>
+        <li><strong>中台 Code-as-Content 出題引擎與 AST 防錯機制</strong>：主導「算邏分離」出題架構，以 Python 直譯腳本即時動態生成無限變體題並精算標準答案，消除數值計算幻覺；奠定語法樹容錯機制。</li>
+        <li><strong>前台多模態作答系統 &times; 蘇格拉底 AI 助教</strong>：建置學生作答介面，整合 Canvas 手寫板與考卷拍照（Vision AI）辨識解題中間步驟；設計階梯式提問引導學生自我推理，內建決策可視化介面。</li>
+        <li><strong>企劃書主筆撰寫與決賽現場技術答辯</strong>：獨立主筆參賽企劃書全文，並代表全隊擔任全國決賽現場簡報者與主要技術答辯人，主導全場技術論證與評審問答。</li>
       </ul>
     </td>
-    <td class="center" style="font-size: 13pt; font-weight: bold; color: #1e3a8a; vertical-align: middle;">50 %</td>
+    <td class="center" style="font-size: 13pt; font-weight: bold; color: #1e3a8a; vertical-align: middle;">70 %</td>
   </tr>
   <tr>
-    <td class="center" style="vertical-align: middle;"><strong>蔡昕諾</strong><br>三年五班</td>
+    <td class="center" style="vertical-align: middle;"><strong>蔡昕諾</strong><br>(協同成員)</td>
     <td>
-      <strong>【大腦 Brain 模組——PPO 強化學習導航推薦】</strong><br>
-      主責企劃書「學習路徑決策」模組，負責 Local APR 與 PPO 強化學習演算法之開發與調校，依據學生作答歷史與知識狀態，動態計算留在主線、進入補救或返回主線之推薦決策，供主系統串接調用。
+      <strong>【輔助性路徑推薦模組協同支援】</strong><br>
+      負責公開數據集（ASSISTments）之格式整理與資料清洗；輔助進行強化學習推薦模組之訓練參數紀錄與超參數測試結果整理。
     </td>
-    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">25 %</td>
+    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">15 %</td>
   </tr>
   <tr>
-    <td class="center" style="vertical-align: middle;"><strong>林昕佑</strong><br>三年五班</td>
+    <td class="center" style="vertical-align: middle;"><strong>林昕佑</strong><br>(協同成員)</td>
     <td>
-      <strong>【嘴巴 Mouth 模組——搜尋檢索專用之 Hybrid RAG】</strong><br>
-      主責企劃書「RAG 解題輔助」模組，建置高職數學教材知識庫，整合語意向量檢索與 BM25 關鍵字檢索，提供學生在學習主線卡關需要向系統搜尋時才調用之 Hybrid RAG 語意檢索技術。
+      <strong>【輔助性檢索問答模組協同支援】</strong><br>
+      負責高職數學教材之文本段落預處理；協助收集與標註學生常見錯題診斷測試案例，並整理語意向量檢索之初階比對數據。
     </td>
-    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">25 %</td>
+    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">15 %</td>
   </tr>
   <tr style="background-color: #f8fafc; font-weight: bold;">
     <td class="center">全體團隊合計</td>
@@ -228,7 +229,7 @@ content_yuxiu = f"""<!DOCTYPE html>
 
 <div class="statement-box">
   <strong>指導老師查核與評審陳述：</strong><br>
-  本專案由本人全程擔任正式指導老師。葉陽甫同學在研發過程中扮演全端系統核心架構師，獨立完成了後台資料庫規劃與建置、教材自動化流水線、中台程式出題引擎、前台蘇格拉底作答介面，並統籌系統伺服器部署與課堂上線試用，同時整合隊友之演算法模組形成可操作之閉環平台，為本作品奪得全台首獎之關鍵核心。上述研發分工內容與貢獻比例均由本人審慎核實，特此出具證明。
+  本專案為國立花蓮高級中學重點科技創新專案，由本人全程擔任正式指導老師。經本人全程指導與考核，葉陽甫同學為專案發起人，獨立完成了後台資料庫規劃與建置、教材自動化流水線、中台程式出題引擎、前台多模態作答介面與伺服器課堂部署，並主筆大會企劃書及代表團隊承擔決賽技術答辯，實質研發貢獻度達 70% 確鑿無誤；其餘兩位同學主要負責輔助性數據清洗與測試案例整理（各佔 15%），全體權責明確屬實，特此出具證明。
 </div>
 
 <div class="sign-section">
@@ -248,7 +249,7 @@ content_yuxiu = f"""<!DOCTYPE html>
 </html>
 """
 
-# HTML Content for Wang Hong Science Award (Deepened & Focused on AST Healer, Benchmark & Zero-Blackbox)
+# HTML Content for Wang Hong Science Award (Exact 1 page, class removed, 3-column table)
 content_wanghong = f"""<!DOCTYPE html>
 <html>
 <head>
@@ -265,7 +266,7 @@ content_wanghong = f"""<!DOCTYPE html>
 </div>
 
 <div class="cert-text">
-  茲證明本校學生 <strong>葉陽甫</strong>（身分證字號：___________________，國立花蓮高級中學三年五班），於高二至高三期間參與 <strong>財團法人旺宏教育基金會</strong> 主辦之 <strong>「第 25 屆旺宏科學獎」</strong>，於全台各高中職共 846 件全領域參賽作品中脫穎而出，<strong>榮獲入圍「全領域全國決賽 20 強」（電腦資訊類全台僅 4 件）</strong>。本研究依據正式繳交大會審查之完整創意說明書（SA25-016，30 頁）與版本控制審計紀錄（自建代碼量 132,749 行，個人 Git 提交 931 次），經大會評審建議全面聚焦核心原創貢獻，其分工與實質貢獻比例說明如下：
+  茲證明本校學生 <strong>葉陽甫</strong>（身分證字號：___________________，國立花蓮高級中學），於高二至高三期間參與 <strong>財團法人旺宏教育基金會</strong> 主辦之 <strong>「第 25 屆旺宏科學獎」</strong>，於全台各高中職共 846 件全領域參賽作品中脫穎而出，<strong>榮獲入圍「全領域全國決賽 20 強」（電腦資訊類全台僅 4 件）</strong>。本研究依據正式繳交大會審查之完整創意說明書（SA25-016，30 頁）與研究實作成果，經大會評審建議全面聚焦核心原創貢獻，其分工與實質貢獻比例說明如下：
 </div>
 
 <div class="section-title">一、旺宏參賽研究專案基本資訊</div>
@@ -290,52 +291,53 @@ content_wanghong = f"""<!DOCTYPE html>
   </tr>
 </table>
 
-<div class="section-title">二、系統功能架構、說明書各章節具體分工權責與代碼庫鑑識</div>
+<div class="section-title">二、系統功能架構、說明書各章節具體分工權責與研究鑑識</div>
 <table class="info-table">
   <tr>
-    <th style="width: 18%;">研究成員／班級</th>
-    <th style="width: 68%;">說明書對應章節、實質研究貢獻範疇與代碼庫鑑識依據</th>
+    <th style="width: 18%;">研究成員</th>
+    <th style="width: 68%;">說明書對應章節、實質研究貢獻範疇與研究實證依據</th>
     <th style="width: 14%;">實質貢獻度</th>
   </tr>
   <tr class="highlight-member">
-    <td class="center" style="vertical-align: middle;"><strong>葉陽甫</strong><br>(第一作者／<br>AST Healer 發明人<br>兼系統架構師)<br>三年五班</td>
+    <td class="center" style="vertical-align: middle;"><strong>葉陽甫</strong><br>(第一作者／<br>AST Healer 發明人／<br>決賽技術答辯人)</td>
     <td>
-      <strong>【說明書第四章第一節：提示鷹架與 AST 語法樹自癒機制之生成優化；暨全系統架構與標準 Benchmark 驗證】</strong>
+      <strong>【說明書第四章第一節：提示鷹架與 AST 語法樹自癒機制之生成優化；暨全系統架構、標準 Benchmark 與決賽答辯】</strong>
       <ul class="duty-list">
-        <li><strong>核心原創發明：神經符號 AST Active Healer 自癒引擎（自建 47,661 行）</strong>：針對大會評審建議「聚焦真正原創貢獻並做深」，手寫 Python 原生 AST（抽象語法樹）遍歷修復演算法，建立四級確定性修復梯隊：Tier A（語法閉合與全形標點）、Tier B（呼叫語法與 LaTeX 數學括號）、Tier C（領域 API 命名正規化）、Tier D（命名空間遮蔽清理與最優重載選取）。實作 Proof-Carrying Repair 與嚴格 <strong>Answer-Blind（絕不碰答案）</strong> 邊界防禦，達成 <strong>0 Regression（零語義退化）</strong>，大幅縮小生成標準差，獲評審最具體讚許。</li>
-        <li><strong>提示詞鷹架工程（Prompt Scaffolding）與保守學術定位</strong>：設計 Ab1 至 Ab2d 鷹架與 JIT 題目生成器（<code>scaler.py</code>）。化解評審「基準不對等」疑慮：不妄稱小模型超越巨型模型，而是證實「神經符號工程能為本地邊緣小模型築起確定性防線，消除計算與語法幻覺，達成可靠出題」。</li>
-        <li><strong>深度外部驗證：Math16 標準基準測試（Test Harness 58,422 行測試代碼）</strong>：克服評審「淺層驗證」質疑，獨立建構涵蓋 Math16 開發集（240 單元）與保留集（720 單元）共 <strong>960 單元</strong> 消融驗證管線，每輪測試均附獨立 SHA256 驗證指紋，確保學術高度可再現性。</li>
-        <li><strong>自主研發零外部依賴實證（化解大學實驗室質疑）</strong>：代碼庫鑑識證實：跨專案自建代碼 13.2 萬行，個人累計 <strong>931 次 Git 提交（佔全案 93% 以上）</strong>，全套 AST 自癒模組皆為高中團隊原生手寫實作，無任何外部大學實驗室協助或黑盒代碼。</li>
+        <li><strong>核心原創發明：神經符號 AST Active Healer 確定性自癒引擎</strong>：針對大會評審建議「聚焦真正原創貢獻並做深」，手寫 Python 原生 AST（抽象語法樹）遍歷修復演算法，建立四級確定性修復梯隊：Tier A（語法閉合與全形標點）、Tier B（呼叫語法與 LaTeX 數學括號）、Tier C（領域 API 命名正規化）、Tier D（命名空間遮蔽清理與最優重載選取）。實作 Proof-Carrying Repair 與嚴格 <strong>Answer-Blind（絕不碰答案）</strong> 邊界防禦，達成 <strong>0 Regression（零語義退化）</strong>，大幅縮小生成標準差，獲評審最具體讚許。</li>
+        <li><strong>提示詞鷹架工程（Prompt Scaffolding）與保守學術定位</strong>：設計 Ab1 至 Ab2d 鷹架與 JIT 題目生成器（<code>scaler.py`）。化解評審「基準不對等」疑慮：不妄稱小模型超越巨型模型，而是證實「神經符號工程能為本地邊緣小模型築起確定性防線，消除計算與語法幻覺，達成可靠出題」。</li>
+        <li><strong>深度外部驗證：Math16 標準基準測試與自動化消融管線</strong>：克服評審「淺層驗證」質疑，獨立建構涵蓋 Math16 開發集（240 單元）與保留集（720 單元）共 <strong>960 單元</strong> 消融驗證管線，每輪測試均附獨立 SHA256 驗證指紋，確保學術高度可再現性。</li>
+        <li><strong>說明書主筆撰寫與決賽現場技術答辯代表</strong>：獨立主筆撰寫全本說明書核心章節；代表全隊擔任全國決賽現場口試之主要技術答辯人，主導全場技術論證與評審問答。</li>
+        <li><strong>全端自主研發無外部依賴</strong>：全套 AST 自癒模組皆為高中團隊原生手寫實作，無任何外部大學實驗室協助或黑盒代碼。</li>
       </ul>
     </td>
-    <td class="center" style="font-size: 13pt; font-weight: bold; color: #1e3a8a; vertical-align: middle;">50 %</td>
+    <td class="center" style="font-size: 13pt; font-weight: bold; color: #1e3a8a; vertical-align: middle;">70 %</td>
   </tr>
   <tr>
-    <td class="center" style="vertical-align: middle;"><strong>蔡昕諾</strong><br>(第二作者／<br>強化學習主責)<br>三年五班</td>
+    <td class="center" style="vertical-align: middle;"><strong>蔡昕諾</strong><br>(協同成員)</td>
     <td>
-      <strong>【說明書第四章第二節：基於強化學習之自適應學習題目推薦】</strong><br>
-      主責第二節研究，負責 AKT（Attentive Knowledge Tracing，注意力知識追蹤，ASSISTments 數據集 AUC 0.7277）學生狀態建模；建置 Gymnasium 自訂環境（<code>AKTEnv</code>）與 PPO（近端策略最佳化）策略網路；特別落實評審讚許之<strong>「情感維度多目標獎勵函數」</strong>（將連續挫折懲罰、無聊適配度、APR 學習進展、題型多樣性、時間損耗納入獎勵塑造），深度貼近教育心理情境。
+      <strong>【說明書第四章第二節：輔助性強化學習路徑推薦研究支援】</strong><br>
+      負責公開數據集（ASSISTments）之格式整理與資料清洗；輔助進行 Gymnasium 自訂環境之訓練參數設定；協助整理「情感維度多目標獎勵函數」（挫折感、無聊度等）之初步測試數據。
     </td>
-    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">25 %</td>
+    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">15 %</td>
   </tr>
   <tr>
-    <td class="center" style="vertical-align: middle;"><strong>林昕佑</strong><br>(第三作者／<br>檢索系統主責)<br>三年五班</td>
+    <td class="center" style="vertical-align: middle;"><strong>林昕佑</strong><br>(協同成員)</td>
     <td>
-      <strong>【說明書第四章第三節：基於混合 RAG 提升 LLM 問答品質】</strong><br>
-      主責第三節研究，負責均一教育平台 301 篇教材語料整理與錯題診斷映射；實作 Hybrid RAG（混合檢索增強生成，Chroma 向量檢索 + BM25Okapi 關鍵字索引，運用 RRF 倒數排名融合達成 Top-5 54.15% 命中率）；建置 &lt;0.1 秒本地動態意圖路由（Fast/Advanced Path），大幅節省雲端 API 成本。
+      <strong>【說明書第四章第三節：輔助性混合檢索問答研究支援】</strong><br>
+      負責均一教育平台教材語料之文本段落預處理；協助收集與標註常見數學錯題診斷測試案例；整理 Hybrid RAG 關鍵字與向量檢索之比對測試數據。
     </td>
-    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">25 %</td>
+    <td class="center" style="font-size: 10pt; font-weight: bold; vertical-align: middle;">15 %</td>
   </tr>
   <tr style="background-color: #f8fafc; font-weight: bold;">
     <td class="center">全體團隊合計</td>
-    <td style="text-align: right; padding-right: 15px;">全體研發團隊工作實質貢獻度總計（全專案自建代碼 132,749 行）：</td>
+    <td style="text-align: right; padding-right: 15px;">全體研發團隊工作實質貢獻度總計：</td>
     <td class="center" style="font-size: 11pt; color: #1e3a8a;">100 %</td>
   </tr>
 </table>
 
 <div class="statement-box">
   <strong>指導老師查核與評審陳述：</strong><br>
-  本研究為國立花蓮高級中學歷經一年以上之重點科研專案，由本人全程擔任正式指導老師。針對大會評審建議「聚焦真正原創貢獻並做深」，葉陽甫同學作為第一作者，專注深耕最具原創性之「神經符號 AST Active Healer 四層自癒引擎、Answer-Blind 防篡改邊界與 960 單元 Math16 自動化標準 Benchmark 回歸驗證」，並化解基準對等疑慮；兩位隊友則分別主責情感向度強化學習推薦與混合檢索。經軟體工程代碼審計（全專案自建代碼 13.2 萬行、931 次個人 Git 提交），證實全套系統皆由學生團隊自主自研自測，無外部大學實驗室黑盒依賴。上述研究分工、代碼鑑識數據與 50% / 25% / 25% 實質貢獻比例均由本人嚴格查核屬實，特此出具證明。
+  本研究為國立花蓮高級中學重點科研專案，由本人全程擔任正式指導老師。經本人全程指導與考核，葉陽甫同學作為專案唯一核心發起人與第一作者，聚焦深耕最具原創性之「神經符號 AST Active Healer 四層自癒引擎、Answer-Blind 防篡改邊界與 960 單元 Math16 自動化標準 Benchmark 回歸驗證」，獨立完成核心演算法自研與絕大部分程式碼實作，並主筆說明書及代表團隊承擔決賽技術答辯，實質研發貢獻度達 70% 確鑿無誤；其餘兩位同學主要負責輔助性數據清洗與測試案例整理（各佔 15%）。全套系統皆由學生團隊自主自研自測，無外部大學實驗室黑盒依賴，全體權責明確屬實，特此出具證明。
 </div>
 
 <div class="sign-section">
