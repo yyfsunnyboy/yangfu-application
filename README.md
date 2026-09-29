@@ -28,10 +28,28 @@
 ---
 
 ### 3. 清華大學特殊選才目錄 (`04_nthu/`)
-- [00_shared](file:///d:/Python/yangfu-application/04_nthu/00_shared/README.md)：清大三個申請方向共用之簡章規定、證據盤點、推薦信策略與來源對照。
-- [01_cs](file:///d:/Python/yangfu-application/04_nthu/01_cs/README.md)：**資訊工程學系**（核心：程式可靠性、AST Healer、軟體工程、系統架構與 CS 理論追求）。
-- [02_ee](file:///d:/Python/yangfu-application/04_nthu/02_ee/README.md)：**電機工程學系**（核心：工程實作、感測控制、容錯除錯思維、計算硬體與系統工程）。
-- [03_ipth](file:///d:/Python/yangfu-application/04_nthu/03_ipth/README.md)：**清華學院學士班（IPTH）**（核心：資訊研發、運動競技、外語素養三線並行，持續深化教育科技專案實踐）。
+- [00_shared](file:///c:/Projects/yangfu-application/04_nthu/00_shared/README.md)：清大三個申請方向共用之簡章規定、證據盤點、推薦信策略與來源對照。
+- [01_cs](file:///c:/Projects/yangfu-application/04_nthu/01_cs/README.md)：**資訊工程學系**（核心：程式可靠性、AST Healer、軟體工程、系統架構與 CS 理論追求）。
+- [02_ee](file:///c:/Projects/yangfu-application/04_nthu/02_ee/README.md)：**電機工程學系**（核心：工程實作、感測控制、容錯除錯思維、計算硬體與系統工程）。
+- [03_ipth](file:///c:/Projects/yangfu-application/04_nthu/03_ipth/README.md)：**清華學院學士班（IPTH）**（核心：資訊研發、運動競技、外語素養三線並行，持續深化教育科技專案實踐）。
+
+---
+
+### 4. 成功大學特殊選才目錄 (`05_ncku/`)
+- [README.md](file:///c:/Projects/yangfu-application/05_ncku/README.md)：成大電機系特選總覽、核心定位、簡章要點與三大關鍵警示。
+- [00_requirements.md](file:///c:/Projects/yangfu-application/05_ncku/00_requirements.md)：**簡章規定全解析**（8名名額、初選擇優24名面試、同分參酌順序、資格認定）。
+- [01_timeline_and_calendar.md](file:///c:/Projects/yangfu-application/05_ncku/01_timeline_and_calendar.md)：**重要時程與日程表**（10/14~10/20 報名/繳費/上傳/系網填表、11/14 面試、12/09 放榜）。
+- [02_submission_checklist.md](file:///c:/Projects/yangfu-application/05_ncku/02_submission_checklist.md)：**審查資料檢核表與指導老師貢獻度證明書模板**（三人團隊分工規範、系網個人資料表填寫須知）。
+- [03_ee_positioning_and_strategy.md](file:///c:/Projects/yangfu-application/05_ncku/03_ee_positioning_and_strategy.md)：**備審定位與面試策略**（2000字自傳動機架構、成大電機九大領域對接、口試攻防 Q&A）。
+
+---
+
+### 5. 中央大學特殊選才目錄 (`06_ncu/`)
+- [README.md](file:///c:/Projects/yangfu-application/06_ncu/README.md)：中央資電不分系特選總覽、核心定位、簡章關鍵指標與三大警示。
+- [00_requirements.md](file:///c:/Projects/yangfu-application/06_ncu/00_requirements.md)：**簡章規定全解析**（僅1名名額、初審x1.0/口試x1.5、同分參酌順序、資格條件對照）。
+- [01_timeline_and_calendar.md](file:///c:/Projects/yangfu-application/06_ncu/01_timeline_and_calendar.md)：**重要時程與日程表**（10/2~10/7 極速報名/繳費/上傳/推薦信邀請、11/5 現場口試、11/23 放榜）。
+- [02_submission_checklist.md](file:///c:/Projects/yangfu-application/06_ncu/02_submission_checklist.md)：**審查資料檢核表與推薦信指引**（資格審查PDF與學系審查PDF分流、推薦函1-2封線上邀請作業、團隊貢獻度證明書模板）。
+- [03_ipeecs_positioning_and_strategy.md](file:///c:/Projects/yangfu-application/06_ncu/03_ipeecs_positioning_and_strategy.md)：**備審定位與口試策略**（自傳與讀書計畫撰寫架構、資電雙棲優勢對接、口試 1.5 權重必考題攻防）。
 
 ---
 
