@@ -1,0 +1,50 @@
+# ==========================================
+# 暫存與分析預覽輸出 (PDF 轉圖、腳本除錯輸出)
+# ==========================================
+*_preview.png
+page_*_preview.png
+preview_*.png
+*_check.png
+
+# 腳本 dump 與中間檢驗文字檔
+inspect_*.txt
+footer_check.txt
+brochure_extract*.txt
+brochure_utf8*.txt
+*_extracted.txt
+*_extract.txt
+
+# ==========================================
+# 暫存資料夾
+# ==========================================
+tmp/
+temp/
+scratch/
+
+# ==========================================
+# Python 環境與快取
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+ENV/
+
+# ==========================================
+# 系統與編輯器設定檔
+# ==========================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
