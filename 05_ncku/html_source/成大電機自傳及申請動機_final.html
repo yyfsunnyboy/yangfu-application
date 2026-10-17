@@ -24,7 +24,7 @@
 <doc-page size="a4">
 
 <!-- ================= PAGE 1 ================= -->
-<section class="page" data-screen-label="01 自傳 一" style="padding:10.5mm 15mm 9mm;display:flex;flex-direction:column;gap:3.5mm;background:#ffffff;color:#1d2226;font-family:'Noto Sans TC',sans-serif;">
+<section class="page" data-screen-label="01 自傳 一" style="padding:10mm 15mm 8mm;display:flex;flex-direction:column;gap:3.6mm;background:#ffffff;color:#1d2226;font-family:'Noto Sans TC',sans-serif;">
   
   <!-- Header Card -->
   <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;background:#f7f8fa;padding:3.5mm 5mm;display:flex;justify-content:space-between;align-items:center;">
@@ -62,41 +62,40 @@
   </div>
 
   <!-- Paragraph 1: 國中智慧遮雨棚 -->
-  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:grid;grid-template-columns:1fr 54mm;gap:4.5mm;align-items:center;">
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:grid;grid-template-columns:1fr 58mm;gap:4.5mm;align-items:center;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      國中時，我和兩位同學製作「多功能智慧遮雨棚」，獲得 2023 IEYI 臺灣選拔賽全國國中組便利生活類銀獎。我負責 Arduino 接線、程式與手機控制。感測器偵測雨滴、溫溼度與距離，Arduino 判斷情境後由馬達收放遮雨棚。只要一條線接錯，整套系統就沒有反應。這是我第一次發現，程式要和實體環境一起運作才算完成。
+      國中時我和兩位同學製作「多功能智慧遮雨棚」，獲 2023 IEYI 臺灣選拔賽銀獎。我負責 Arduino 接線、程式、App Inventor 軟體與手機控制。感測器偵測雨滴、溫溼度與距離，判斷後控制馬達收放遮雨棚。只要一條線接錯，系統就毫無反應。這讓我體會程式必須與實體環境協同運作才算完成。
     </div>
     <div style="display:flex;flex-direction:column;gap:1mm;align-items:center;">
-      <img src="img/qh_p1_0.jpg" alt="智慧遮雨棚" style="width:100%;height:35mm;object-fit:cover;border-radius:0.8mm;border:0.75pt solid #d9dee4;display:block;">
-      <div style="font-size:7.5pt;color:#6b7278;">▲ 智慧遮雨棚實體</div>
+      <img src="img/qh_p1_0.jpg" alt="智慧遮雨棚" style="width:100%;height:39mm;object-fit:cover;border-radius:0.8mm;border:0.75pt solid #d9dee4;display:block;">
+      <div style="font-size:7.5pt;color:#64748b;">▲ 遮雨棚</div>
     </div>
   </div>
 
   <!-- Paragraph 2: 高一 FBref 資料分析 -->
-  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:grid;grid-template-columns:1fr 54mm;gap:4.5mm;align-items:center;">
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:grid;grid-template-columns:1fr 98mm;gap:4.5mm;align-items:center;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      高一時，為了和朋友比較哪位球員近況較好，我自學 Python、pandas 與爬蟲，從 FBref（足球數據網站）整理球員資料。查單一球員很快成功，連續查詢後 IP 卻被封鎖，換 VPN 也只撐一天。後來才理解這是 Rate Limiting，改為加入請求間隔後才穩定跑完。那次我知道，程式沒有錯，也可能因為不了解外部系統而失敗。
+      高一時為比較球員近況，我自學 Python、pandas 與爬蟲，從 FBref 整理足球數據。查單一球員順利，連續查詢卻遭封鎖 IP。深入研究才理解 Rate Limiting 機制，加入請求間隔後穩定跑完。這次挫折讓我明白程式本身無誤，也可能因未理解外部系統限制而失效。
     </div>
     <div style="display:flex;flex-direction:column;gap:1mm;align-items:center;">
-      <img src="img/qh_p1_1.jpg" alt="FBref" style="width:100%;height:35mm;object-fit:contain;background:#ffffff;border-radius:0.8mm;border:0.75pt solid #d9dee4;display:block;">
-      <div style="font-size:7.5pt;color:#6b7278;">▲ 球員近五場數據比較</div>
+      <img src="img/fbref_presentation.png" alt="球員戰術儀表板" style="width:100%;height:auto;background:#ffffff;border-radius:0.8mm;border:0.75pt solid #d9dee4;display:block;">
     </div>
   </div>
 
   <!-- Paragraph 3: 高二 AI 自適應學習系統 -->
-  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:flex;flex-direction:column;gap:2.5mm;">
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.2mm 4.5mm;display:flex;flex-direction:column;gap:2mm;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      高二準備育秀盃時，指導老師要我們以身邊的問題來發想題目。我問在高職教數學的父親，他說同一班學生程度差距很大，老師很難在同一堂課替每個人安排不同的練習。於是我和兩位同學開始製作 AI 自適應學習系統。在三人團隊中，我負責教材匯入、題目生成及作答紀錄回傳的流程，並設計 Code-as-Content 模組：AI 模型生成可帶入不同參數、產生新題目與答案的 Python 出題程式。
+      高二準備育秀盃時，父親反映高職課堂學生程度落差大、難個別化練習。我和兩位同學開發 AI 自適應學習系統，我負責資料管線與 Code-as-Content 出題模組，讓模型生成可置換參數的 Python 出題程式。得獎後持續改版，將教材、AI、判題與紀錄整合，目前已由父親在兩個班級正式融入教學。
     </div>
     
-    <div style="border-top:0.75pt solid #e2e8f0;padding-top:2.5mm;display:grid;grid-template-columns:1fr 1fr;gap:4mm;">
-      <div style="display:flex;flex-direction:column;gap:0.8mm;align-items:center;">
-        <img src="img/qh_p2_0.jpg" alt="教師端" style="width:100%;height:33mm;object-fit:cover;object-position:top left;border-radius:0.6mm;border:0.75pt solid #cbd5e1;display:block;">
-        <div style="font-size:7.5pt;color:#64748b;">▲ 教師端：班級管理與教學工具</div>
+    <div style="border-top:0.75pt solid #e2e8f0;padding-top:2.8mm;margin:0 -3.5mm;display:grid;grid-template-columns:1fr 1fr;gap:2.5mm;">
+      <div style="display:flex;flex-direction:column;gap:1mm;align-items:center;">
+        <img src="img/teacher_overview.png" alt="教師端" style="width:100%;height:auto;border-radius:0.6mm;border:0.75pt solid #cbd5e1;display:block;">
+        <div style="font-size:8pt;color:#64748b;font-weight:500;">▲ 教師端</div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:0.8mm;align-items:center;">
-        <img src="img/qh_p2_1.jpg" alt="學生端" style="width:100%;height:33mm;object-fit:cover;object-position:top left;border-radius:0.6mm;border:0.75pt solid #cbd5e1;display:block;">
-        <div style="font-size:7.5pt;color:#64748b;">▲ 學生端：依知識節點學習</div>
+      <div style="display:flex;flex-direction:column;gap:1mm;align-items:center;">
+        <img src="img/student_practice.jpg" alt="學生端" style="width:100%;height:auto;border-radius:0.6mm;border:0.75pt solid #cbd5e1;display:block;">
+        <div style="font-size:8pt;color:#64748b;font-weight:500;">▲ 學生端</div>
       </div>
     </div>
 
@@ -114,7 +113,7 @@
 
 
 <!-- ================= PAGE 2 ================= -->
-<section class="page" data-screen-label="02 自傳 二" style="padding:10.5mm 15mm 9mm;display:flex;flex-direction:column;gap:3.5mm;background:#ffffff;color:#1d2226;font-family:'Noto Sans TC',sans-serif;">
+<section class="page" data-screen-label="02 自傳 二" style="padding:10.5mm 15mm 9mm;display:flex;flex-direction:column;gap:4mm;background:#ffffff;color:#1d2226;font-family:'Noto Sans TC',sans-serif;">
   
   <!-- Header Card -->
   <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;background:#f7f8fa;padding:3.5mm 5mm;display:flex;justify-content:space-between;align-items:center;">
@@ -132,49 +131,61 @@
   <div style="font-size:17.5pt;font-weight:700;letter-spacing:0.02em;line-height:1.2;color:#1f2937;">當系統能運作之後，我開始追問怎麼證明它</div>
 
   <!-- Paragraph 1: 扶輪盃、育秀盃與小模型 -->
-  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:flex;flex-direction:column;gap:2mm;">
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:4.2mm 4.5mm;display:flex;flex-direction:column;gap:2mm;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      系統在 2026 扶輪盃全國高中 AI 競賽獲高中組第一名，首次成為可完整操作的原型；持續整合後，再獲得第 23 屆育秀盃全國高中職 AI 應用類金獎。目前系統已在兩個班級正式使用。新增題型時仍依賴雲端大型模型生成程式，題型越多，API 成本與等待時間也隨之累積。我嘗試把部分工作交給本地小模型，實測卻發現小模型生成程式並不穩定。我後來真正想解的，變成怎麼讓小模型少做一點，卻做得更穩。
+      系統獲 2026 扶輪盃全國高中組第一名與第 23 屆育秀盃金獎。隨題型增加，依賴雲端大模型帶來昂貴 API 成本與延遲。我嘗試改用本地小模型，實測卻發現程式生成極不穩定。我轉而思考：如何讓小模型減少負擔，卻能產出穩定的程式。
     </div>
   </div>
 
   <!-- Paragraph 2: Scaffolding 與 AST Healer -->
-  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:flex;flex-direction:column;gap:2mm;">
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:4.2mm 4.5mm;display:flex;flex-direction:column;gap:2mm;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      我注意到同一數學單元的程式結構與常見錯誤會反覆出現，所以我做了兩件事。生成前，用 Scaffolding 與 Domain Functions 先整理好題型規則與工具，降低模型自行規劃的負擔；生成後，用 AST Active Healer 修復能由固定規則唯一判斷修法的局部錯誤，無法確定時就不介入。初版實驗中，完整方法在我自建的指標 MCRI（Math Code Reliability Index）得到 97.41 分。當時我以為這樣就能證明方法有效。
+      我觀察到同單元程式結構與錯誤具規律性，採取兩項策略：生成前以 Scaffolding 與 Domain Functions 提供規範，降低規劃負擔；生成後以 AST Active Healer 針對確定規則修復局部錯誤，無法定奪則不介入。初版實驗中，自建指標 MCRI 取得 97.41 分，當時誤以為已證明有效。
     </div>
   </div>
 
   <!-- Paragraph 3: 東區科展、旺宏 20 強與重新驗證 -->
-  <div style="border:0.75pt solid #1e3a8a;border-radius:1mm;padding:3.8mm 4.5mm;background:#f8fafc;display:flex;flex-direction:column;gap:2.5mm;">
+  <div style="border:0.75pt solid #1e3a8a;border-radius:1mm;padding:4mm 4.5mm;background:#f8fafc;display:flex;flex-direction:column;gap:3mm;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      這份研究獲第 66 屆東區科展優等，但未晉級全國；之後在第 25 屆旺宏科學獎入圍全國決賽 20 強（全領域 846 件）。入圍後，評審指出結果的衡量與驗證需要加強，並建議我聚焦在 Healer。我重新設計正式實驗：規則開發與測試資料分開，評估前凍結規則，再逐筆追蹤每個原始失敗。結果，Healer 的安全救援率只有 2.63%。約四成失敗屬於答案或演算法錯誤，本來就不在規則能修的範圍。
+      本研究獲東區科展優等，並入圍第 25 屆旺宏科學獎全國 20 強（846件）。評審指正實驗衡量需加強並聚焦 Healer。我重構正式實驗：嚴格隔離測試集、凍結規則並逐筆追蹤失敗，實測安全救援率為 2.63%。分析發現約四成屬算法與數學邏輯錯誤，本非語法修復範圍。
     </div>
 
-    <!-- Comparison Metric & Healer Diagram -->
-    <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:3mm;align-items:stretch;">
-      <div style="background:#ffffff;border:0.75pt solid #cbd5e1;border-radius:0.8mm;padding:2.5mm 3.5mm;display:flex;flex-direction:column;justify-content:space-between;">
-        <div style="display:flex;justify-content:space-between;align-items:baseline;">
+    <!-- Two Images Side-by-Side: Left Flowchart, Right Experiment Chart (Enlarged) -->
+    <div style="margin:0 -3.5mm;display:grid;grid-template-columns:1.08fr 1fr;gap:2.2mm;align-items:stretch;">
+      <div style="background:#ffffff;border:0.75pt solid #cbd5e1;border-radius:0.8mm;padding:0.6mm;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <img src="img/healer_flowchart.png" alt="AST Healer 運作流程" style="width:100%;height:58mm;object-fit:contain;display:block;">
+      </div>
+      <div style="background:#ffffff;border:0.75pt solid #cbd5e1;border-radius:0.8mm;padding:0.6mm;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <img src="img/healer_chart_user.png" alt="實驗結果" style="width:100%;height:58mm;object-fit:contain;display:block;">
+      </div>
+    </div>
+
+    <!-- Horizontal Comparison & Rescue Calculation Card -->
+    <div style="background:#ffffff;border:0.75pt solid #cbd5e1;border-radius:0.8mm;padding:2.5mm 4mm;display:flex;flex-direction:column;gap:2mm;">
+      <div style="display:flex;align-items:center;justify-content:space-between;white-space:nowrap;">
+        <div style="display:flex;align-items:baseline;gap:2mm;">
           <span style="font-size:8.5pt;color:#64748b;">初版｜自建指標 MCRI 分數</span>
-          <span style="font-size:14pt;font-weight:700;color:#475569;">97.41</span>
+          <b style="font-size:14pt;color:#475569;">97.41</b>
         </div>
-        <div style="text-align:center;color:#1e3a8a;font-size:9.5pt;font-weight:700;margin:1.5mm 0;">
-          ↓ 重新設計驗證
+        
+        <div style="color:#1e3a8a;font-size:9pt;font-weight:700;display:flex;align-items:center;gap:1.5mm;">
+          <span>→</span><span>重新設計驗證</span><span>→</span>
         </div>
-        <div style="background:#eff6ff;border:1pt solid #1e3a8a;border-radius:0.8mm;padding:2mm 2.5mm;text-align:center;">
-          <div style="font-size:8.5pt;color:#1e3a8a;font-weight:700;">正式實驗｜安全救援率</div>
-          <div style="font-size:16pt;font-weight:700;color:#1e3a8a;line-height:1.2;">2.63%</div>
-          <div style="font-size:8pt;color:#64748b;">9／342 個原始失敗成功修復</div>
+        
+        <div style="background:#eff6ff;border:0.75pt solid #1e3a8a;border-radius:0.6mm;padding:1.4mm 3.5mm;display:flex;align-items:baseline;gap:2mm;">
+          <span style="font-size:8.5pt;color:#1e3a8a;font-weight:700;">正式實驗｜安全救援率</span>
+          <b style="font-size:14.5pt;color:#1e3a8a;line-height:1;">2.63%</b>
+          <span style="font-size:7.5pt;color:#64748b;">（9／342 原始失敗修復）</span>
         </div>
       </div>
-
-      <div style="background:#ffffff;border:0.75pt solid #cbd5e1;border-radius:0.8mm;padding:1.5mm;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-        <img src="img/healer_flowchart.png" alt="AST Healer 流程" style="width:100%;height:33mm;object-fit:contain;display:block;">
+      
+      <div style="border-top:0.75pt solid #e2e8f0;padding-top:1.8mm;display:flex;justify-content:center;">
+        <img src="img/healer_rescue_pipeline.png" alt="安全救援率計算流程：720 → 342 → 42 → 9 → 2.63%" style="width:100%;max-width:160mm;height:auto;display:block;">
       </div>
     </div>
 
     <div style="font-size:9.5pt;line-height:1.6;color:#475569;background:#ffffff;border-radius:0.6mm;padding:2mm 3mm;border-left:2.5pt solid #1e3a8a;">
-      <b>數字變小，但研究邊界變得更清楚。</b>兩者為不同指標，不能直接比較；97.41 不是通過率。我保留這個結果，並寫清楚方法範圍：Healer 可修正輸出格式、局部結構與固定規格錯誤，無法修正數學答案或核心演算法。
+      <b>數字變小，邊界更明：</b>兩指標定義不同，97.41 亦非通過率。我保留真實數據並界定邊界：Healer 能校正輸出格式與固定規格，無法修復核心算法與數學答案。
     </div>
 
     <div style="display:flex;gap:4mm;font-size:9.5pt;font-weight:700;margin-top:0.5mm;">
@@ -218,11 +229,11 @@
   </div>
 
   <!-- Paragraph 1: 改試小模型到 Edge AI -->
-  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:4mm 4.5mm;display:flex;flex-direction:column;gap:2mm;">
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:flex;flex-direction:column;gap:2mm;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      改試本地小模型後，我開始思考：哪些工作留在雲端，哪些能交由本地或裝置端執行？處理器與記憶體會如何限制效能？這些問題讓我注意 Edge AI 與嵌入式系統。
+      實測小模型使我深入思索運算分工：何種任務留雲端、何者入邊緣？處理器與記憶體又如何制約效能？這引導我關注 Edge AI 與嵌入式系統。
       <br><br>
-      我目前尚未做過裝置端 Edge AI、FPGA、NPU 或晶片設計，也還沒系統學過處理器、記憶體與數位電路的運作原理。
+      我尚未接觸裝置端 Edge AI 部署、FPGA/NPU 晶片設計，亦缺乏處理器結構與數位電路之系統化知識。
     </div>
   </div>
 
@@ -246,28 +257,67 @@
   </div>
 
   <!-- Paragraph 2: 為什麼選擇成大電機 ＋ 實作照片佐證 -->
-  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:4mm 4.5mm;display:grid;grid-template-columns:1fr 54mm;gap:4.5mm;align-items:center;">
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.8mm 4.5mm;display:grid;grid-template-columns:1fr 54mm;gap:4.5mm;align-items:center;">
     <div style="font-size:10.8pt;line-height:1.7;text-align:justify;color:#2c3237;">
-      國中做遮雨棚時，我會接感測器、寫控制程式，卻不懂電路原理；研究本地小模型時，我能量測成本與延遲，卻還不知道硬體如何影響執行。成大電機的電路學、電子電路實驗與邏輯系統，能幫我補足電路與數位硬體基礎；資訊工程組的計算機組織、作業系統，則能讓我理解程式與模型如何使用處理器與記憶體。我想把所學帶回已正式使用的 AI 學習系統，先改善穩定性，再逐步研究雲端、本地與裝置端的工作分工。
+      做遮雨棚能接線寫程式，卻未諳電路原理；測小模型能計延遲，卻不知底層硬體制約。成大電機的電路學、電子實驗與邏輯系統能補足硬體根基；計算機組織與作業系統則助我透析程式與模型如何調度處理器與記憶體。我期盼將所學回饋已運行的 AI 系統，由純軟體逐步邁向雲邊端軟硬整合。
     </div>
     
     <div style="display:flex;flex-direction:column;gap:1mm;align-items:center;">
       <img src="img/qh_p1_2.jpg" alt="Arduino 防呆警報器" style="width:100%;height:38mm;object-fit:cover;border-radius:0.8mm;border:0.75pt solid #cbd5e1;display:block;">
-      <div style="font-size:7.5pt;color:#64748b;">▲ Arduino 實體電路接線除錯</div>
+      <div style="font-size:7.5pt;color:#64748b;">▲ 實體接線除錯</div>
     </div>
   </div>
 
-  <!-- Bottom Anchor: 全人佐證合影 -->
-  <div style="border:0.75pt solid #cbd5e1;border-radius:1mm;padding:2.2mm 4mm;background:#f8fafc;display:flex;align-items:center;justify-content:space-between;">
-    <div style="display:flex;align-items:center;gap:3mm;">
-      <img src="img/fb_p1_0.jpg" alt="足球代表隊" style="width:24mm;height:14mm;object-fit:cover;border-radius:0.6mm;display:block;">
-      <div style="font-size:8.5pt;color:#475569;">
-        花蓮高中足球代表隊（背號 42）｜全國中等學校五人制聯賽前六強抗壓淬鍊
+  <!-- Paragraph 3: 全人特質與申請動機：注重運動的成大、公開一級足球校隊、外語能力 -->
+  <div style="border:0.75pt solid #cdd3d9;border-radius:1mm;padding:3.5mm 4.5mm;display:flex;flex-direction:column;gap:2.5mm;">
+    
+    <!-- Subsection 1: 體育全人與足球競賽成果 -->
+    <div style="display:grid;grid-template-columns:1fr 54mm;gap:4.5mm;align-items:center;">
+      <div style="display:flex;flex-direction:column;gap:1.2mm;">
+        <div style="display:flex;align-items:center;gap:2mm;">
+          <span style="font-size:10.5pt;font-weight:700;color:#1e3a8a;">體育全人｜成大足球公開一級與競賽實績</span>
+          <span style="background:#eff6ff;color:#1e3a8a;font-size:7.5pt;font-weight:700;padding:0.5mm 2mm;border-radius:0.4mm;border:0.5pt solid #bfdbfe;">申請動機</span>
+        </div>
+        <div style="font-size:9.5pt;line-height:1.6;text-align:justify;color:#2c3237;">
+          成大極重視運動精神，足球校隊征戰大專聯賽（UFA）最高殿堂：<b>男生組公開第一級（公開一級）</b>，是我極嚮往成大的關鍵動機。我長期任花中主力（背號 42），獲 <b>114 學年度全國五人制第五名</b>、<b>113 學年度第六名</b>，連兩年挺進全國 8 強（具運績資格）。高強度競技淬鍊出抗壓韌性與團隊紀律，是我投入科研工程的心理基石；入學後我渴望入隊征戰公開一級、為校爭光。
+        </div>
+      </div>
+      
+      <div style="display:flex;flex-direction:column;gap:1mm;align-items:center;">
+        <img src="img/fb_p1_0.jpg" alt="花蓮高中足球代表隊合影" style="width:100%;height:31mm;object-fit:cover;border-radius:0.8mm;border:0.75pt solid #cbd5e1;display:block;">
+        <div style="font-size:7.5pt;color:#64748b;">▲ 花中足球隊決賽合影（背號 42 主力）</div>
       </div>
     </div>
-    <div style="font-size:8.5pt;font-weight:700;color:#1e3a8a;">
-      求真求實 · 工學精神
+
+    <!-- Divider -->
+    <div style="border-top:0.75pt solid #e2e8f0;"></div>
+
+    <!-- Subsection 2: 英文能力與國際接軌 -->
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:3mm;">
+      <div style="display:flex;flex-direction:column;gap:1.2mm;flex:1;">
+        <div style="display:flex;align-items:center;gap:2mm;">
+          <span style="font-size:10.5pt;font-weight:700;color:#1e3a8a;">外語能力｜自主研讀文獻與國際接軌</span>
+        </div>
+        <div style="font-size:9.5pt;line-height:1.6;text-align:justify;color:#2c3237;">
+          具<b>多益 945 分</b>（金色證書）、<b>GEPT 中高級證書</b>（聽讀說寫全過，聽力 111／口說 80）及花蓮縣英文作文甲等。紮實外語讓我無礙研讀國際頂尖論文與底層技術文件，並能完全勝任成大電機全英語授課（EMI）與國際學術接軌。
+        </div>
+      </div>
+      
+      <!-- Badges -->
+      <div style="display:flex;gap:2mm;align-items:center;">
+        <div style="background:#f8fafc;border:0.75pt solid #cbd5e1;border-radius:0.6mm;padding:1.5mm 3mm;text-align:center;min-width:30mm;">
+          <span style="font-size:7.5pt;color:#64748b;display:block;">TOEIC 測驗</span>
+          <b style="font-size:11.5pt;color:#1e3a8a;">945 分</b>
+          <span style="font-size:7pt;color:#059669;font-weight:700;display:block;">金色證書</span>
+        </div>
+        <div style="background:#f8fafc;border:0.75pt solid #cbd5e1;border-radius:0.6mm;padding:1.5mm 3mm;text-align:center;min-width:30mm;">
+          <span style="font-size:7.5pt;color:#64748b;display:block;">GEPT 全民英檢</span>
+          <b style="font-size:10.5pt;color:#1e3a8a;">中高級</b>
+          <span style="font-size:7pt;color:#475569;display:block;">聽讀說寫合格</span>
+        </div>
+      </div>
     </div>
+
   </div>
 
 </section>
