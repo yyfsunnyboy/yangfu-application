@@ -405,8 +405,8 @@ def build_html():
       <!-- Right Column: Visual Evidence & Screenshot -->
       <div style="display:flex; flex-direction:column; justify-content:space-between;">
         <div class="img-box">
-          <img src="{p('ai_p7_img2.png')}" style="height:205px; width:100%; object-fit:cover;" alt="學生個人學習分析儀表板">
-          <div class="img-caption">▲ 真實正式網站：學生個人知識狀態診斷與答題紀錄後台 (mathb.math-adaptive.org)</div>
+          <img src="{p('ai_student_practice_screen.png')}" style="width:100%; height:auto; display:block;" alt="學生適性解題與 AI 助教介面">
+          <div class="img-caption" style="font-size:9.2px; padding:3.5px 4px; white-space:nowrap;">▲ 真實正式網站：學生適性解題、畫布運算與 AI 助教介面 (mathb.math-adaptive.org)</div>
         </div>
 
         <div class="grid-2">
@@ -759,35 +759,35 @@ def build_html():
 
       <!-- English Content + 2 Certificate Photos -->
       <div class="grid-2">
-        <div style="display:flex; flex-direction:column; justify-content:space-between;">
-          <div class="card" style="margin-bottom:8px; padding:10px 12px;">
-            <div style="font-size:11.5px; color:#334155; line-height:1.5;">
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div class="card" style="margin-bottom:0; padding:12px 13px;">
+            <div style="font-size:11.6px; color:#334155; line-height:1.58;">
               <b>英文是探索世界與前沿知識的日常工具</b>：<br>
               英文對我而言從不是應試科目，而是無縫接軌國際頂尖科技的必備工具。在執行 AST Healer 研究與自適應系統架構時，我能<b>直接研讀 arXiv 上最新出爐的 AI、編譯器與軟體工程英文論文</b>，精準理解數學公式、演算法推導與國際 Benchmark 設計。<br>
-              <b>多元語文競賽成果</b>：<br>
-              高一至高二英文累積成績校排前 4%（高二下 96 分、校排第 7・前 2%）；榮獲花蓮縣英文作文競賽高中組甲等、校內英語演說初賽第一名、全校複賽第四名。
+              <div style="margin-top:6px;"><b>多元語文競賽成果</b>：<br>
+              高一至高二英文累積成績校排前 4%（高二下 96 分、校排第 7・前 2%）；榮獲花蓮縣英文作文競賽高中組甲等、校內英語演說初賽第一名、全校複賽第四名。</div>
             </div>
           </div>
 
           <!-- Academic Paper & Open Source Card -->
-          <div class="card" style="margin-bottom:0; background:#fffdfa; border:1px solid #fde68a; padding:8px 11px;">
-            <div style="font-size:11.2px; font-weight:800; color:#b45309; margin-bottom:3px;">
+          <div class="card" style="margin-bottom:0; background:#fffdfa; border:1px solid #fde68a; padding:9px 12px;">
+            <div style="font-size:11.3px; font-weight:800; color:#b45309; margin-bottom:4px;">
               📚 前沿學術研讀 × 國際開源技術生態接軌
             </div>
-            <div style="font-size:10.5px; color:#78350f; line-height:1.42;">
+            <div style="font-size:10.8px; color:#78350f; line-height:1.46;">
               高中期間直接研讀國外頂會 AI 前沿論文（Tree-of-Thoughts、Self-Refine、SWE-bench），並流暢研讀 PyTorch、Transformers、FastAPI 官方全英技術文件，具備國際學術發表與跨國技術協作實力。
             </div>
           </div>
         </div>
 
-        <div class="grid-2">
-          <div class="img-box">
-            <img src="{p('english_img1.jpeg')}" style="height:182px; object-fit:contain; background:#ffffff;" alt="GEPT 中高級證書">
-            <div class="img-caption">▲ GEPT 全民英檢中高級合格</div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div class="img-box" style="margin-bottom:0;">
+            <img src="{p('english_img2.jpeg')}" style="height:124px; width:100%; object-fit:contain; background:#ffffff;" alt="TOEIC 945 金色證書">
+            <div class="img-caption" style="padding:2.5px 6px;">▲ TOEIC 945 金色證書</div>
           </div>
-          <div class="img-box">
-            <img src="{p('english_img2.jpeg')}" style="height:182px; object-fit:contain; background:#ffffff;" alt="TOEIC 945 金色證書">
-            <div class="img-caption">▲ TOEIC 945 金色證書</div>
+          <div class="img-box" style="margin-bottom:0;">
+            <img src="{p('english_img1.jpeg')}" style="height:148px; width:100%; object-fit:contain; background:#ffffff;" alt="GEPT 中高級證書">
+            <div class="img-caption" style="padding:2.5px 6px;">▲ GEPT 全民英檢中高級合格</div>
           </div>
         </div>
       </div>
