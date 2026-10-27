@@ -540,7 +540,7 @@ def build_html():
   .p1-tech-desc {{
     color: #475569;
     padding-left: 12.5px;
-    text-align: justify;
+    text-align: left;
     font-size: 10pt;
     line-height: 1.38;
     margin-top: 2px;
@@ -624,25 +624,25 @@ def build_html():
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">總體表現</span>：4學期班排前五，學業平均 <b>84.2</b>（年排 24/320 · <span class="hl-blue">前 8%</span>）
+              <span class="p1-item-title">總體表現</span>：4學期班排前五，學業平均 <b>84.2</b><br><span style="white-space:nowrap;">（年排 24/320 · <span class="hl-blue">前 8%</span>）</span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">數理資工</span>：資訊科 <span class="hl-blue">前 6%</span> ｜ 數學科 <span class="hl-blue">前 6%</span> ｜ 化學科 <span class="hl-blue">前 4%</span> ｜ 地科 <span class="hl-blue">前 2%</span>
+              <span class="p1-item-title">數理資工</span>：<span style="white-space:nowrap;">資訊科 <span class="hl-blue">前 6%</span> ｜</span> <span style="white-space:nowrap;">數學科 <span class="hl-blue">前 6%</span> ｜</span><br><span style="white-space:nowrap;">化學科 <span class="hl-blue">前 4%</span> ｜</span> <span style="white-space:nowrap;">地科 <span class="hl-blue">前 2%</span></span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">校內選修</span>：Arduino 程式設計 <b>94 分</b>（第 2 名） ｜ Python <b>90 分</b>（第 4 名）
+              <span class="p1-item-title">校內選修</span>：Arduino 程式設計 <b>94 分</b>（第 2 名）、<br><span style="white-space:nowrap;">Python <b>90 分</b>（第 4 名）</span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">數理競賽</span>：JHMC 國中數學競賽 <b>團體一等獎／個人優良獎</b> ｜ 更生盃 <b>銀牌</b>
+              <span class="p1-item-title">數理競賽</span>：JHMC 國中數學競賽<br><span style="white-space:nowrap;"><b>團體一等獎／個人優良獎</b></span> ｜ 更生盃 <b>銀牌</b>
             </div>
           </div>
         </div>
@@ -658,32 +658,31 @@ def build_html():
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">TOEIC 945 分</span>（<span class="hl-gold">金色證書</span>）：聽力 <b>485</b> ／ 閱讀 <b>460</b>
+              <span class="p1-item-title">TOEIC 945 分</span>（<span class="hl-gold">金色證書</span>）：<br><span style="white-space:nowrap;">聽力 <b>485</b> ／ 閱讀 <b>460</b></span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">全民英檢（GEPT）中高級</span>：聽、說、讀、寫四項全數通過
+              <span class="p1-item-title">全民英檢（GEPT）中高級</span>：<br><span style="white-space:nowrap;">聽、說、讀、寫四項全數通過</span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">在校英文成績</span>：高一二平均 <b>91 分</b>（<span class="hl-blue">前 4%</span>），高二下 <b>96 分</b>（年排第 7 · <span class="hl-blue">前 2%</span>）
+              <span class="p1-item-title">在校英文成績</span>：高一二平均 <b>91 分</b>（<span class="hl-blue">前 4%</span>），<br><span style="white-space:nowrap;">高二下 <b>96 分</b></span>（年排第 7 · <span class="hl-blue">前 2%</span>）
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">語文競賽成果</span>：花蓮縣英文作文高中組<b>甲等</b> ｜ 校內作文 <b>第 2 名</b><br>
-              校內英語演說 初賽第 1 名、全校複賽第 4 名
+              <span class="p1-item-title">語文競賽成果</span>：花蓮縣英文作文高中組 <b>甲等</b> ｜<br><span style="white-space:nowrap;">校內作文 <b>第 2 名</b></span><br>校內英語演說 <span style="white-space:nowrap;">初賽第 1 名</span>、<span style="white-space:nowrap;">全校複賽第 4 名</span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">國中語文延續</span>：國中英文作文 <b>優等</b> ｜ 英語讀者劇場 <b>特優</b>
+              <span class="p1-item-title">國中語文延續</span>：國中英文作文 <b>優等</b> ｜<br><span style="white-space:nowrap;">英語讀者劇場 <b>特優</b></span>
             </div>
           </div>
         </div>
@@ -699,7 +698,7 @@ def build_html():
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">全國五人制足球聯賽</span>：114 學年 <span class="hl-gold">全國第 5 名</span> ｜ 113 學年 <span class="hl-gold">全國第 6 名</span><br><span style="color:#475569;">（連續兩年符合教育部運動績優甄試資格）</span>
+              <span class="p1-item-title">全國五人制足球聯賽</span>：<span style="white-space:nowrap;">114 學年 <span class="hl-gold">全國第 5 名</span></span> ｜<br><span style="white-space:nowrap;">113 學年 <span class="hl-gold">全國第 6 名</span></span><br><span style="color:#475569;">（連續兩年符合教育部運動績優甄試資格）</span>
             </div>
           </div>
           <div class="p1-item-row">
@@ -711,25 +710,25 @@ def build_html():
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">花蓮縣運足球</span>：2025 社會男子組 <b>亞軍</b> ｜ 2022 國中男子組 <b>冠軍</b>
+              <span class="p1-item-title">花蓮縣運足球</span>：<span style="white-space:nowrap;">2025 社會男子組 <b>亞軍</b></span> ｜<br><span style="white-space:nowrap;">2022 國中男子組 <b>冠軍</b></span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">球隊經歷</span>：花蓮高中五人制校隊主力球員（背號 42 號）
+              <span class="p1-item-title">球隊經歷</span>：花蓮高中五人制校隊主力球員<br><span style="white-space:nowrap;">（背號 42 號）</span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">體能表現</span>：校運 800m <b>第 2 名</b> ｜ 體育成績 <b>84.5 分</b>（年排 13/320 · <span class="hl-blue">前 4%</span>）
+              <span class="p1-item-title">體能表現</span>：校運 800m <b>第 2 名</b> ｜ <span style="white-space:nowrap;">體育成績 <b>84.5 分</b></span><br><span style="white-space:nowrap;">（年排 13/320 · <span class="hl-blue">前 4%</span>）</span>
             </div>
           </div>
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">國中運動延續</span>：國中足球聯賽 <span class="hl-blue">全國乙組季軍</span> ｜ 花崗國中男足隊長（參與全國甲級聯賽）
+              <span class="p1-item-title">國中運動延續</span>：國中足球聯賽 <span class="hl-blue">全國乙組季軍</span> ｜<br>花崗國中男足隊長（參與全國甲級聯賽）
             </div>
           </div>
         </div>
@@ -762,7 +761,7 @@ def build_html():
           <div class="p1-award-desc">
             <div class="p1-sub-bullet-row">
               <span class="p1-bullet">•</span>
-              <div class="p1-bullet-content">高中職 AI 應用類金獎（獎金 10 萬元） ｜ 作品：AI 自適應輔助學習系統</div>
+              <div class="p1-bullet-content">高中職 AI 應用類金獎（獎金 10 萬元），作品為 AI 自適應輔助學習系統。</div>
             </div>
           </div>
         </div>
@@ -798,7 +797,7 @@ def build_html():
             <span class="p1-bullet-content">AST Active Healer 程式修復機制：</span>
           </div>
           <div class="p1-tech-desc">
-            研究如何透過固定規則，修正 AI 產生的程式中部分可明確判斷的錯誤，並透過測試確認修復方法的適用範圍。
+            以固定規則修正 AI 產生的程式中部分能明確判斷的錯誤，並透過測試確認哪些情況能修復、哪些無法修復。
           </div>
         </div>
         <div class="p1-tech-item" style="margin-bottom:0;">
@@ -807,7 +806,7 @@ def build_html():
             <span class="p1-bullet-content">AI 自適應輔助學習系統：</span>
           </div>
           <div class="p1-tech-desc">
-            讓 AI 先建立可重複使用的 Python 出題程式，經驗證後產生不同數值的題目與答案，並結合數學判題、AI 提示及學習紀錄。系統已於花蓮高商兩個班級實際使用（自適應複習於部分單元實作）。
+            由 AI 建立可重複使用的 Python 出題程式，驗證後產生變化題與答案，並結合數學判題、AI 助教及學習紀錄。系統已在花蓮高商兩個班級使用，部分單元提供規則式自適應複習。
           </div>
           <div class="p1-tech-links">
             <a href="https://mathb.math-adaptive.org/review-demo" target="_blank">▶ 線上 Demo 展示頁 ↗</a>
@@ -826,7 +825,7 @@ def build_html():
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">APCS 大學程式先修檢測</span>：觀念 <b>92.5 分</b>（<span class="hl-gold">5 級分 · 前 3.7%</span>） ｜ 實作 <b>135 分</b>（2 級分）
+              <span class="p1-item-title">APCS 大學程式先修檢測</span>：觀念 <b>92.5 分</b>（<span class="hl-gold">5 級分 · <span style="white-space:nowrap;">前 3.7%</span></span>） ｜ 實作 <b>135 分</b>（2 級分）
             </div>
           </div>
           <div class="p1-item-row">
@@ -862,7 +861,7 @@ def build_html():
           <div class="p1-item-row">
             <span class="p1-bullet">•</span>
             <div class="p1-item-content">
-              <span class="p1-item-title">第 65 屆校內科展</span>（工程學科(二)）：【<b>優勝</b>】（未晉級東區）
+              <span class="p1-item-title">第 65 屆校內科展</span>（工程學科(二)）：【<b>優勝</b>】<span style="white-space:nowrap;">（未晉級東區）</span>
             </div>
           </div>
         </div>
@@ -925,13 +924,51 @@ def build_html():
     <div class="grid-2" style="margin-bottom: 8px;">
       <!-- Left Column: Core System Pipeline & Role -->
       <div style="display:flex; flex-direction:column; justify-content:space-between;">
-        <div class="card" style="padding:8px 10px;">
-          <div class="card-header">
+        <div class="card" style="padding:6px 10px;">
+          <div class="card-header" style="margin-bottom:3px;">
             <div class="card-header-bar"></div>
             開發起點與課堂需求
           </div>
-          <div style="font-size:9.5pt; color:#334155; line-height:1.45;">
-            我的父親在花蓮高商教授數學。開發初期，我從他每天遇到的教學問題開始，包括教材整理費時、固定題庫難以持續練習，以及學生在不同數學單元的學習落差。我陸續開發教材匯入、程式化出題、數學判題與學生練習功能，經過試用與修改後，讓系統實際進入課堂。
+          <div style="font-size:9.1pt; color:#334155; line-height:1.4; text-align:justify; margin-bottom:4px;">
+            我的父親在花蓮高商教授數學。開發初期，我先了解他在實際教學中遇到的問題，整理出四項需求：
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:3.5px; margin-bottom:5px;">
+            <div>
+              <div style="font-size:8.9pt; font-weight:800; color:#0f2942; line-height:1.3;">
+                <span style="color:#1e3a8a;">01｜</span>教材整理費時
+              </div>
+              <div style="font-size:8.4pt; color:#475569; line-height:1.32; letter-spacing:-0.18px;">
+                數學教材包含公式、圖形與大量例題，逐題輸入系統相當費時。
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:8.9pt; font-weight:800; color:#0f2942; line-height:1.3;">
+                <span style="color:#1e3a8a;">02｜</span>固定題庫難以反覆練習
+              </div>
+              <div style="font-size:8.4pt; color:#475569; line-height:1.32; letter-spacing:-0.18px;">
+                同一題目做過後容易記住答案，需要能持續產生變化題的方式。
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:8.9pt; font-weight:800; color:#0f2942; line-height:1.3;">
+                <span style="color:#1e3a8a;">03｜</span>學生的學習程度不同
+              </div>
+              <div style="font-size:8.4pt; color:#475569; line-height:1.32; letter-spacing:-0.18px;">
+                同班學生可能卡在不同數學概念，需要依作答情況安排補強。
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:8.9pt; font-weight:800; color:#0f2942; line-height:1.3;">
+                <span style="color:#1e3a8a;">04｜</span>數學作答不只是輸入文字
+              </div>
+              <div style="font-size:8.5pt; color:#475569; line-height:1.34; letter-spacing:-0.15px;">
+                學生需要輸入公式、手寫計算與作圖，普通文字表單並不適合。
+              </div>
+            </div>
           </div>
         </div>
 
@@ -969,13 +1006,10 @@ def build_html():
             <span>規則式自適應複習｜根據作答紀錄安排補強</span>
           </div>
           <div style="background:#f1f5f9; border:1px solid #e2e8f0; padding:4px 8px; border-radius:4px; font-size:8.6pt; color:#1e293b; text-align:center; font-weight:700; line-height:1.45; margin-bottom:5px;">
-            學生作答 → 更新技能能力值與錯誤紀錄 → 判斷卡點<br>→ 前置技能練習 → 返回原進度
+            學生作答 → 更新技能能力值與錯誤紀錄 → 判斷卡點 →<br>前置技能練習 → 返回原進度
           </div>
-          <div style="font-size:9.2pt; color:#334155; line-height:1.42;">
-            系統會記錄每道題所屬的數學技能、作答結果與時間，累積成學生的學習狀態。當某項技能的表現符合預設卡點條件時，系統會安排相關前置技能練習，達到補救完成條件後，再接續原本的題目。
-            <div style="margin-top:3.5px; color:#475569;">
-              目前已在部分單元實作，跨單元擴充及實際學習成效仍在驗證中。
-            </div>
+          <div style="font-size:9.2pt; color:#334155; line-height:1.45; text-align:justify;">
+            系統記錄每道題對應的數學技能、作答結果與時間，藉此整理學生的學習狀態。當技能表現符合預設卡點條件時，安排前置技能練習；達到補救條件後，再返回原本進度。目前僅在部分單元實作，跨單元擴充與學習成效仍待驗證。
           </div>
         </div>
       </div>
@@ -993,7 +1027,7 @@ def build_html():
             <div class="img-caption" style="padding:2px 4px; font-size:8.2pt;">▲ 神通扶輪盃 全國第一名</div>
           </div>
           <div class="img-box" style="margin-bottom:0;">
-            <img src="{p('yuxiu_award_photo.png')}" style="height:86px; width:100%; object-fit:cover; object-position:center 25%; background:#ffffff;" alt="育秀盃金獎頒獎照片">
+            <img src="{p('yuxiu_award_photo.png')}" style="height:86px; width:100%; object-fit:cover; object-position:center 70%; background:#ffffff;" alt="育秀盃金獎頒獎照片">
             <div class="img-caption" style="padding:2px 4px; font-size:8.2pt;">▲ 育秀盃創意獎 全國金獎</div>
           </div>
         </div>
@@ -1069,15 +1103,15 @@ def build_html():
       <div class="grid-3" style="font-size:9.2pt; line-height:1.38; gap:8px;">
         <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:4px; padding:5px 7px;">
           <b style="color:#0f2942;">1. 題目規格與回歸測試</b><br>
-          課堂曾遇題目缺少參數或變題超出合理範圍；建立出題程式回歸測試機制，透過回歸測試，降低題目參數缺漏與答案定義不完整的情況。
+          課堂曾遇到題目參數缺漏、變題超出合理範圍等問題，因此加入出題程式測試，減少相同錯誤再次出現。
         </div>
         <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:4px; padding:5px 7px;">
           <b style="color:#0f2942;">2. 數理答案等價判定</b><br>
-          以 Python 及 SymPy 符號運算處理分數、根號、小數、區間與 LaTeX 等價答案，避免字串直接比對與模型誤判。
+          使用 Python 與 SymPy 判斷分數、根號、小數及區間等答案是否等價，減少直接比對文字造成的誤判。
         </div>
         <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:4px; padding:5px 7px;">
           <b style="color:#0f2942;">3. 書房主機與外部連線</b><br>
-          正式主機置於家中書房，透過 HiNet 網路與 Cloudflare Tunnel 建立外部連線通道，綁定正式網域供學校課堂連線。
+          正式主機設於家中書房，透過 HiNet 與 Cloudflare Tunnel 對外提供服務，讓學校師生能連線使用。
         </div>
       </div>
     </div>
@@ -1088,8 +1122,8 @@ def build_html():
         <span>⚡ 銜接研究：從出題系統的成本與錯誤，延伸為程式碼修復研究</span>
         <span style="font-size:9.5pt; font-weight:800; color:#1e3a8a;">接續右頁研究 ➔</span>
       </div>
-      <div style="font-size:9.5pt; color:#334155; line-height:1.45;">
-        在開發出題系統時，我發現每次使用雲端 AI 產生程式都會增加成本。因此開始測試本地小型模型，但它產生的程式常出現格式、函式名稱或其他局部錯誤。這讓我進一步研究：<b>哪些錯誤能用固定規則修正，哪些仍需要模型重新處理？</b>
+      <div style="font-size:9.5pt; color:#334155; line-height:1.45; text-align:justify;">
+        在開發出題系統時，我發現每次使用雲端 AI 產生程式都會增加成本。因此開始測試本地小型模型，但它產生的程式<span style="white-space:nowrap;">常出現格式、函式名稱</span>或其他局部錯誤。這讓我進一步研究：<b>哪些錯誤能用固定規則修正，哪些仍需要模型重新處理？</b>
       </div>
     </div>
   </div>
@@ -1128,8 +1162,8 @@ def build_html():
         <span>🔬 研究問題意識與出發點</span>
         <span style="font-size:9.2pt; color:#1e3a8a; font-weight:700;">承接左頁出題系統問題 ◄</span>
       </div>
-      <div style="font-size:9.5pt; color:#334155; line-height:1.42;">
-        本地小模型產生 Python 程式時，經常出現格式、函式介面或局部結構錯誤。我嘗試設計固定規則的修復器，只修改能明確判定的部分，再透過測試確認是否真的修好。（AST 抽象語法樹：用來分析與檢查程式結構的樹狀資料表示法）。
+      <div style="font-size:9.5pt; color:#334155; line-height:1.42; text-align:justify;">
+        本地小模型產生 Python 程式時，經常出現格式、函式介面或局部結構錯誤。我嘗試設計固定規則修復器，只修改能<span style="white-space:nowrap;">明確判定</span>的部分，再透過測試確認是否真的修好。（AST 抽象語法樹：用來分析與檢查程式結構的樹狀資料表示法）。
       </div>
     </div>
 
@@ -1137,42 +1171,54 @@ def build_html():
     <div class="grid-2" style="margin-bottom: 8px; align-items: stretch;">
       <!-- Left: AST Active Healer Flowchart -->
       <div class="card" style="padding: 7px 9px; margin-bottom: 0; display: flex; flex-direction: column; justify-content: space-between;">
-        <div class="card-header" style="margin-bottom: 4px; justify-content: space-between;">
-          <div style="display: flex; align-items: center; gap: 5px;">
-            <div class="card-header-bar"></div>
-            <span style="font-size: 10.5pt; font-weight: 800;">三步驟修復機制（答案盲與固定規則）</span>
+        <div class="card-header" style="margin-bottom: 4px; justify-content: space-between; align-items: flex-start;">
+          <div style="display: flex; align-items: flex-start; gap: 5px;">
+            <div class="card-header-bar" style="margin-top: 3px;"></div>
+            <span style="font-size: 10.5pt; font-weight: 800; line-height: 1.25;">三步驟修復機制<br><span style="white-space:nowrap;">（答案盲與固定規則）</span></span>
           </div>
-          <span style="font-size: 8.4pt; color: #475569; background:#f1f5f9; padding:1.5px 5px; border-radius:3px; font-weight: 700;">能確定才修 · 不能確定不修改</span>
+          <span style="font-size: 8.4pt; color: #475569; background:#f1f5f9; padding:1.5px 5px; border-radius:3px; font-weight: 700; white-space:nowrap; margin-top:2px;">能確定才修 · 不能確定不修改</span>
         </div>
         <div class="img-box" style="border: 1px solid #e2e8f0; margin-bottom: 4px; flex: 1; display: flex; align-items: center; justify-content: center; background: #ffffff;">
           <img src="{p('healer_blind_repair_rules.png')}" style="height: 200px; width: 100%; object-fit: contain;" alt="AST Healer 答案盲修復與固定規則流程圖">
         </div>
-        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4.5px 7px; font-size: 8.9pt; color: #334155; line-height: 1.35;">
-          <b>修復流程原則</b>：① <b>檢查原始失敗程式</b>：不看正確答案，針對失敗案例逐層比對 ➔ ② <b>固定規則修改</b>：遇到有明確修正方式的錯誤才修改 ➔ ③ <b>重新測試</b>：無法確定怎麼修時保持不修改（主動棄權）。
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4px 7px; font-size: 8.7pt; color: #334155; line-height: 1.34;">
+          <div style="margin-bottom:3px;">
+            <b style="color:#0f2942;">① 檢查原始失敗程式</b><br>
+            不讀取正確答案，逐筆檢查失敗案例。
+          </div>
+          <div style="margin-bottom:3px;">
+            <b style="color:#0f2942;">② 依固定規則修改</b><br>
+            只有修法明確時才修改局部程式；無法確定時不修改。
+          </div>
+          <div>
+            <b style="color:#0f2942;">③ 重新測試</b><br>
+            使用相同測試，確認程式是否由失敗轉為通過。
+          </div>
         </div>
       </div>
 
       <!-- Right: Benchmark Experiment Chart -->
       <div class="card" style="padding: 7px 9px; margin-bottom: 0; display: flex; flex-direction: column; justify-content: space-between;">
-        <div class="card-header" style="margin-bottom: 4px; justify-content: space-between;">
+        <div class="card-header" style="margin-bottom: 4px; justify-content: space-between; align-items: center;">
           <div style="display: flex; align-items: center; gap: 5px;">
             <div class="card-header-bar"></div>
-            <span style="font-size: 10.5pt; font-weight: 800;">正式測試設計與三種模型表現</span>
+            <span style="font-size: 10.5pt; font-weight: 800; white-space:nowrap;">正式測試與模型表現</span>
           </div>
-          <span style="font-size: 8.4pt; color: #475569; background:#f1f5f9; padding:1.5px 5px; border-radius:3px; font-weight: 700;">旺宏決賽 720 筆獨立測試</span>
+          <span style="font-size: 8.4pt; color: #475569; background:#f1f5f9; padding:1.5px 5px; border-radius:3px; font-weight: 700; white-space:nowrap;">正式保留測試｜720 筆</span>
         </div>
         <div class="img-box" style="border: 1px solid #e2e8f0; margin-bottom: 4px; flex: 1; display: flex; align-items: center; justify-content: center; background: #ffffff;">
           <img src="{p('healer_chart_user.png')}" style="height: 200px; width: 100%; object-fit: contain;" alt="三種模型在四種 Prompt 條件下的原始通過率與 Healer 新增救援">
         </div>
         <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 4px; padding: 4.5px 7px; font-size: 8.9pt; color: #334155; line-height: 1.35;">
-          <b>模型與條件觀察</b>：測試三種模型（Qwen 3.5 4B、Qwen 3.5 9B、Gemini 3.5 Flash）在四種 Prompt 下的表現；342 筆失敗中，42 筆觸發修復規則，9 筆安全救回（救回率 2.63%）。
+          <b>模型與條件觀察</b>：測試三種模型（<span style="white-space:nowrap;">Qwen 3.5 4B</span>、<span style="white-space:nowrap;">Qwen 3.5 9B</span>、<span style="white-space:nowrap;">Gemini 3.5 Flash</span>）<br>在四種 Prompt 下的表現；342 筆失敗中，42 筆觸發修復規則，9 筆安全救回<span style="white-space:nowrap;">（救回率 2.63%）</span>。
         </div>
       </div>
     </div>
 
     <!-- 4 Rigorous Benchmark Metrics with Formula -->
-    <div style="background:#f1f5f9; border:1px solid #cbd5e1; border-radius:4px; padding:3px 8px; font-size:8.8pt; color:#0f2942; font-weight:700; text-align:center; margin-bottom:6px;">
-      正式測試設計公式：Math16 (4題規則開發，12題正式測試) × 3種模型 × 4種Prompt × 5組隨機種子 ＝ 12 × 3 × 4 × 5 ＝ 720 筆正式測試
+    <div style="background:#f1f5f9; border:1px solid #cbd5e1; border-radius:4px; padding:4px 8px; font-size:8.8pt; color:#0f2942; font-weight:700; text-align:center; margin-bottom:6px; line-height:1.4;">
+      <span style="color:#475569; font-weight:600;">Math16 資料集：4 題用於規則開發，其餘 12 題保留為正式獨立測試</span><br>
+      <span style="white-space:nowrap;">12 題 × 3 種模型 × 4 種 Prompt × 5 組隨機種子</span> ＝ <span style="white-space:nowrap;"><b>720 筆正式測試</b></span>
     </div>
 
     <div class="grid-4" style="margin-bottom: 5px;">
@@ -1206,9 +1252,9 @@ def build_html():
             <div class="card-header-bar"></div>
             研究歷程：從初版指標到決賽重新驗證
           </div>
-          <div style="font-size:9.4pt; color:#334155; line-height:1.45;">
-            初版研究以自訂 MCRI 指標評估程式與數學品質，最高階段的整體平均分數為 97.41。這個數字是綜合評估分數，並非程式正確率。<br>
-            東區科展未晉級全國後，我重新檢視初版研究的不足。進入旺宏科學獎決賽準備階段，進一步把規則開發與正式測試資料分開，重新驗證修復器能真正修好多少失敗程式。
+          <div style="font-size:9.2pt; color:#334155; line-height:1.44; text-align:justify;">
+            <p style="margin:0 0 3px 0;">初版研究使用自訂 MCRI 指標評估程式與數學品質，最高階段的整體平均分數為 97.41。這是綜合評估分數，並非程式通過率。東區科展未晉級全國後，我重新檢視初版評估方式的限制。</p>
+            <p style="margin:0;">進入旺宏科學獎決賽準備階段，我將修復規則開發與正式測試資料分開，重新驗證修復器真正能救回多少失敗案例。</p>
           </div>
         </div>
         <div style="background:#f1f5f9; border:1px solid #cbd5e1; border-left:3.5px solid #b45309; border-radius:4px; padding:3.5px 6px; font-size:8.8pt; color:#0f2942; font-weight:700; margin-top:5px;">
@@ -1223,9 +1269,9 @@ def build_html():
             <div class="card-header-bar"></div>
             研究結果與修復機制的真實限制
           </div>
-          <div style="font-size:9.4pt; color:#334155; line-height:1.45;">
-            正式測試中，342 筆原始失敗案例只有 9 筆經修復後通過。這些成功案例主要與格式、介面及局部資料處理有關。涉及題意理解或核心演算法的錯誤，固定規則無法直接解決。<br>
-            這次重新驗證讓我更清楚了解方法的適用範圍，也知道高分指標仍需要獨立測試支持。
+          <div style="font-size:9.2pt; color:#334155; line-height:1.44; text-align:justify;">
+            <p style="margin:0 0 3px 0;">正式測試中，342 筆原始失敗案例有 9 筆經修復後通過，成功案例主要集中於格式、介面及局部資料處理問題。涉及題意理解或核心演算法的錯誤，固定規則無法直接解決。</p>
+            <p style="margin:0;">這次重新驗證讓我更清楚修復器的適用範圍，也看見初版綜合指標無法直接代表實際修復效果。</p>
           </div>
         </div>
         <div style="background:#f1f5f9; border:1px solid #cbd5e1; border-left:3.5px solid #1e3a8a; border-radius:4px; padding:3.5px 6px; font-size:8.8pt; color:#0f2942; font-weight:700; margin-top:5px;">
@@ -1243,7 +1289,7 @@ def build_html():
       <div class="grid-3" style="font-size:8.9pt; line-height:1.38; gap:7px;">
         <div style="background:#ffffff; border:1px solid #cbd5e1; border-top:2.5px solid #15803d; border-radius:4px; padding:4.5px 7px;">
           <span style="font-weight:800; color:#15803d; font-size:8.8pt; display:block; margin-bottom:2px;">1｜修復後通過 (9 筆)</span>
-          成功案例包含輸出格式與介面問題 6 筆、執行與資料流問題 2 筆，以及程式解析／語法問題 1 筆。
+          輸出格式與介面：6 筆；<br>執行與資料流：2 筆；語法解析：1 筆。
         </div>
         <div style="background:#ffffff; border:1px solid #cbd5e1; border-top:2.5px solid #b45309; border-radius:4px; padding:4.5px 7px;">
           <span style="font-weight:800; color:#b45309; font-size:8.8pt; display:block; margin-bottom:2px;">2｜修改後仍未通過 (33 筆)</span>
@@ -1251,7 +1297,7 @@ def build_html():
         </div>
         <div style="background:#ffffff; border:1px solid #cbd5e1; border-top:2.5px solid #b91c1c; border-radius:4px; padding:4.5px 7px;">
           <span style="font-weight:800; color:#b91c1c; font-size:8.8pt; display:block; margin-bottom:2px;">3｜未進行修改 (300 筆)</span>
-          未符合可介入的固定修復規則，因此保留原始程式，不進行沒有明確依據的修改。
+          未符合可介入的固定修復規則，保留原始程式，不進行無明確依據的修改。
         </div>
       </div>
     </div>
@@ -1319,21 +1365,27 @@ def build_html():
       <div class="grid-2" style="align-items: start;">
         <div style="display:flex; flex-direction:column; gap:6px;">
           <div class="card" style="margin-bottom:0; padding:8px 10px;">
-            <div style="font-size:9.5pt; color:#334155; line-height:1.46;">
-              我從小學開始踢足球，國中曾獲全國乙組第三名，國三擔任花崗國中男子足球隊隊長。升上高中後，持續參加花蓮高中五人制足球校隊，連續兩年進入全國決賽八強。113 學年度聯賽共有 63 隊參加，花蓮高中獲全國第六名；114 學年度共有 57 隊參加，取得全國第五名。足球是我長期投入的運動，也讓我累積團隊合作與持續訓練的經驗。
+            <div style="font-size:9.3pt; color:#334155; line-height:1.42; text-align:justify;">
+              <div>
+                我從幼兒園開始踢足球。國小參加<span style="white-space:nowrap;">全國學童盃</span>獲第三名；國二在全國乙組聯賽獲第三名。國三擔任花崗國中男子足球隊隊長，並參加全國<span style="white-space:nowrap;">國男甲級聯賽</span>。這些年我一直跟著球隊訓練，逐步接觸不同層級的正式賽事。
+              </div>
+              <div style="margin-top:3.5px;">
+                升上<span style="white-space:nowrap;">花蓮高中</span>後，我繼續代表五人制足球校隊出賽。<span style="white-space:nowrap;">113 學年度</span>，球隊在全國 63 支參賽隊伍中獲第六名；<span style="white-space:nowrap;">114 學年度</span>，在 57 支隊伍中獲第五名，決賽以 5:3 擊敗臺中惠文高中。高中這兩年，我同時安排課業、資訊專案與校隊訓練，持續參與全國聯賽。
+              </div>
             </div>
-            <div style="font-size:8.8pt; color:#0f2942; font-weight:700; margin-top:4px; background:#f1f5f9; border:1px solid #cbd5e1; border-left:3px solid #1e3a8a; padding:2.5px 6px; border-radius:3px;">
-              ✦ 符合教育部運動績優甄試資格 ｜ 114學年度 5:3 擊敗台中惠文高中獲全國第 5 名
+            <div style="font-size:8.8pt; color:#0f2942; font-weight:700; margin-top:4px; background:#f1f5f9; border:1px solid #cbd5e1; border-left:3px solid #1e3a8a; padding:2.5px 6px; border-radius:3px; line-height:1.35;">
+              ◆ 連續兩年符合教育部運動績優甄試資格<br>
+              <span style="white-space:nowrap;">113 學年全國第 6 名</span> ｜ <span style="white-space:nowrap;">114 學年全國第 5 名</span>
             </div>
           </div>
 
           <!-- FBref analytics highlight -->
           <div class="card" style="margin-bottom:0; background:#f8fafc; border:1px solid #cbd5e1; padding:7px 10px;">
-            <div style="font-size:9.8pt; font-weight:800; color:#0f2942; margin-bottom:2.5px;">
-              📊 足球數據分析實作｜FBref 資料整理與 Python 練習
+            <div style="font-size:9.8pt; font-weight:800; color:#0f2942; margin-bottom:2.5px; white-space:nowrap;">
+              📊 足球數據分析實作｜FBref × Python
             </div>
-            <div style="font-size:9.2pt; color:#475569; line-height:1.42;">
-              因為對足球與程式設計都有興趣，我使用 Python 整理 FBref 公開足球數據，嘗試分析球員及球隊的比賽表現，作為跨領域程式實作練習。
+            <div style="font-size:9.2pt; color:#475569; line-height:1.42; text-align:justify;">
+              因為對足球與程式設計都有興趣，我使用 Python 整理 FBref 公開數據，嘗試分析球員及球隊的比賽表現，作為跨領域程式實作練習。
             </div>
           </div>
         </div>
@@ -1341,8 +1393,8 @@ def build_html():
         <div style="display:flex; flex-direction:column; gap:6px;">
           <!-- 足球代表隊合影與緊鄰說明文字（說明文字緊貼照片，無多餘空隙） -->
           <div class="img-box" style="margin-bottom:0;">
-            <img src="{p('soccer_team_perfect.png')}" style="width:100%; height:auto; display:block; object-fit:contain;" alt="花蓮高中足球代表隊合影">
-            <div class="img-caption" style="padding:2.5px 5px; font-size:8.2pt;">▲ 114學年度全國中等學校五人制足球聯賽決賽現場：花蓮高中代表隊合影（前排右四 葉陽甫）</div>
+            <img src="{p('soccer_team_perfect_circled.png')}" style="width:100%; height:auto; display:block; object-fit:contain;" alt="花蓮高中足球代表隊合影">
+            <div class="img-caption" style="padding:2.5px 5px; font-size:8.2pt;">▲ 114學年度全國中等學校五人制足球聯賽決賽現場：<span style="white-space:nowrap;">花蓮高中代表隊合影</span><br>（紅圈處為葉陽甫，受獎代表左後方）</div>
           </div>
 
           <!-- 足球轉播精彩畫面 連結與 QR Code -->
@@ -1436,7 +1488,7 @@ def build_html():
             <div style="display:flex; flex-direction:column; gap:3px; font-size:9.2pt; color:#334155;">
               <div style="display:flex; align-items:baseline; gap:4px; line-height:1.38;">
                 <span style="flex-shrink:0; width:8px; font-weight:700; color:#1e3a8a;">•</span>
-                <div style="flex:1;">花蓮縣英文作文競賽高中 A 組<b>甲等</b>、校內英文作文二年級<b>第二名</b>。</div>
+                <div style="flex:1;">花蓮縣英文作文競賽高中 A 組<b>甲等</b>、<br>校內英文作文<span style="white-space:nowrap;">二年級<b>第二名</b></span>。</div>
               </div>
               <div style="display:flex; align-items:baseline; gap:4px; line-height:1.38;">
                 <span style="flex-shrink:0; width:8px; font-weight:700; color:#1e3a8a;">•</span>
@@ -1444,7 +1496,7 @@ def build_html():
               </div>
               <div style="display:flex; align-items:baseline; gap:4px; line-height:1.38;">
                 <span style="flex-shrink:0; width:8px; font-weight:700; color:#1e3a8a;">•</span>
-                <div style="flex:1;">高一至高二英文平均 <b>91 分</b>（校排前 4%）；高二下 <b>96 分</b>、年級第七名（前 2%）。</div>
+                <div style="flex:1;">高一至高二英文平均 <b>91 分</b>（校排前 4%）；<br><span style="white-space:nowrap;">高二下 <b>96 分</b></span>、年級第七名（前 2%）。</div>
               </div>
             </div>
           </div>
@@ -1454,8 +1506,8 @@ def build_html():
             <div style="font-size:9.8pt; font-weight:800; color:#0f2942; margin-bottom:2px;">
               C｜英文的實際使用
             </div>
-            <div style="font-size:9.2pt; color:#475569; line-height:1.42;">
-              在程式學習時，我會查閱英文技術資料，理解新的工具與使用方法。平常也會觀看國外足球分析影片、閱讀英文足球資訊。英文是我學習資訊與足球時持續使用的工具。
+            <div style="font-size:9.2pt; color:#475569; line-height:1.42; text-align:justify;">
+              在程式學習時，我會查閱英文技術資料，了解新工具的使用方法；平常也會觀看國外足球分析影片、閱讀英文足球資訊。英文是我學習資訊與足球時持續使用的工具。
             </div>
           </div>
         </div>
@@ -1484,7 +1536,7 @@ def build_html():
           </a>
           <div style="font-size:9.2pt; white-space:nowrap;">
             <a href="https://mathb.math-adaptive.org/review-demo" target="_blank" style="color:#0f2942; font-weight:800; text-decoration:none;">
-              AI 學習系統公開 Demo ↗
+              AI 自適應輔助學習系統 Demo ↗
             </a>
           </div>
         </div>
